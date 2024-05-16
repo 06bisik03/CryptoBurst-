@@ -1,5 +1,5 @@
 import styles from "../../Styles/Components/Navbar/Navbar.module.css";
-
+import {Link} from "react-router-dom"
 const Navbar = () => {
   return (
     <div className={styles.navbarContainer}>
@@ -9,10 +9,10 @@ const Navbar = () => {
         </div>
         <div className={styles.controlsContainer}>
           <a>Buy Crypto</a>
-          <a>Market</a>
-          <a>News</a>
-          <a>Exchange</a>
-          <a>Search</a>
+          <a >Market</a>
+          <a >News</a>
+          <a >Exchange</a>
+          <a >Search</a>
         </div>
       </div>
       <div className={styles.navbarRedirectContainer}>
