@@ -1,0 +1,148 @@
+.background {
+  width: 94%;
+  margin-left: 3%;
+  height: 100%;
+  background-color: rgb(36, 39, 50);
+  display: flex;
+}
+.introductionTextContainer {
+  width: 50%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 65% 35%;
+  color: white;
+}
+.introductionTitleContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 75% 25%;
+}
+.introductionTitle {
+  width: 100%;
+  height: 80%;
+  align-self: flex-end;
+  font-weight: 500;
+  font-size: 550%;
+  letter-spacing: 0.035em;
+  line-height: 1.15em;
+  display: grid;
+  align-items: flex-end;
+}
+.introductionTitle div:nth-child(1) {
+  color: rgb(255, 179, 0);
+}
+.emailSignUpContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+.emailSignUp {
+  width: 100%;
+  height: 60%;
+  align-self: center;
+  display: flex;
+  gap: 2.5%;
+
+
+}
+.emailSignUp input {
+  width: 50%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: transparent;
+  border: solid 1px grey;
+  font-size: 110%;
+  text-indent: 5%;
+}
+.emailSignUp input:focus {
+  outline: none;
+  color: white;
+  
+}
+.emailSignUp button {
+  width: 25%;
+  height: 108%;
+  border-radius: 15px;
+  border: solid 1px grey;
+  background: rgb(255, 179, 0);
+  font-size: 110%;
+  transition: background-color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.emailSignUp button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 212, 166);
+}
+.signUpIncentive {
+  width: 100%;
+  justify-self: flex-end;
+  height: 100%;
+
+  font-size: 90%;
+
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.signUpIncentive:hover {
+  cursor: pointer;
+}
+.introductionConnection {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+}
+.socialsContainer {
+  width: 80%;
+  height: 70%;
+
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 15% 42.5% 42.5%;
+}
+.socialsContainer div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social {
+  width: 80%;
+  height: 70%;
+  justify-self: center;
+  align-self: center;
+  background-color: rgba(128, 128, 128, 0);
+  border-radius: 15px;
+}
+.informationContainer {
+  width: 50%;
+  height: 100%;
+  display: grid;
+}
+.coinsNews {
+  width: 80%;
+  height: 80%;
+
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  gap: 5%;
+}
+.coins {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  display: grid;
+  background-color: rgb(40, 45, 62);
+}
+.news {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background-color: rgb(40, 45, 62);
+}
