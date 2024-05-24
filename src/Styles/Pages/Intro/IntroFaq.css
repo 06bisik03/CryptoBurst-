@@ -1,0 +1,96 @@
+.container {
+  width: 80%;
+  justify-self: center;
+  color: white;
+
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 3%;
+
+}
+
+.faq-drawer {
+  margin-bottom: 1em;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.faq-drawer__content-wrapper {
+  font-size: 1.2em;
+  max-height: 0;
+  line-height: 1.5em;
+  overflow: hidden;
+  padding: 0 1.5em;
+  opacity: 0;
+  transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.faq-drawer__title {
+  cursor: pointer;
+  display: block;
+  font-size: 1.25em;
+  font-weight: 700;
+  padding: 1.5em 0 0 0;
+  text-indent: 1%;
+  position: relative;
+  margin-bottom: 0;
+  transition: all 0.25s ease-out, background-color 0.25s ease-in-out;
+}
+
+.faq-drawer__title::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: " ";
+  display: inline-block;
+  float: right;
+  height: .3em;
+  position: relative;
+  top: 2px;
+  right: 0.5em; /* Adjusted to bring it closer */
+  transform: rotate(135deg);
+  transition: transform 0.35s ease-in-out;
+  vertical-align: top;
+  width: .3em;
+  color: rgb(255, 255, 255);
+}
+
+
+.faq-drawer__title:hover {
+  color: rgb(255, 179, 0);
+}
+
+.faq-drawer__trigger:checked
+  + .faq-drawer__title
+  + .faq-drawer__content-wrapper {
+  max-height: 10em; /* Adjusted value for smaller accordion */
+  padding: 1.5em; /* Ensure padding is added */
+  opacity: 1;
+  transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.faq-drawer__trigger:checked + .faq-drawer__title::after {
+  transform: rotate(-45deg);
+  transition: transform 0.25s ease-in-out;
+}
+
+/* Change background and text color when checked */
+.faq-drawer__trigger:checked + .faq-drawer__title,
+.faq-drawer__trigger:checked + .faq-drawer__title + .faq-drawer__content-wrapper {
+  background-color: rgba(245, 245, 245, 0.112);
+
+}
+
+.faq-drawer__trigger:checked + .faq-drawer__title {
+  color: rgb(255, 179, 0);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 80px;
+  }
+}

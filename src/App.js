@@ -4,20 +4,21 @@ import styles from "./Styles/App.module.css";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BuyCrypto from "./Pages/BuyCrypto/BuyCrypto";
+import Home from "./Pages/Intro/Home";
 function App() {
   return (
     <body>
       <div className={styles.appContainer}>
-        <Navbar />
         <div className={styles.pageContainer}>
+          <Navbar />
           <BrowserRouter>
             <Routes>
-              <Route index element={<IntroPage />}/>
-              <Route path="/buycrypto" element={<BuyCrypto/>}/>
+              <Route index element={<Home/>} />
+              <Route path="/buycrypto" element={<BuyCrypto />} />
             </Routes>
           </BrowserRouter>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </body>
   );

@@ -1,12 +1,12 @@
 .footerContainer {
   height: 80vh;
   width: 80%;
-  justify-self: center;
-  display: grid;
-  margin-top: 20vh;
+align-self: center;
+  background-color: blue;
   display: grid;
   grid-template-rows: 85% 15%;
   color: white;
+
 }
 .linksContainer {
   width: 100%;

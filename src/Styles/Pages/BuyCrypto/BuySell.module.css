@@ -1,0 +1,179 @@
+.buySellContainer {
+    width:100%;
+    height:250vh;  
+    display: grid;
+}
+.buySell {
+    width:100%;
+    height:80vh;
+    display: flex;
+}
+.hotCryptos {
+    width:50%;
+    height:90%;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+.hotCryptos h1 {
+    font-size: 2.5em;
+    justify-content: center;
+}
+.cryptosContainer {
+    width:85%;
+    height:80%;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.225);;
+}
+.calculator {
+    width: 40%;
+    margin-left: 5%;
+    height: 85%;
+    align-self: center;
+    border-radius: 2em;
+
+
+    display: grid;
+    grid-template-rows: 13% 72% 15%;
+
+}
+
+.actionType {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.buy, .sell {
+    width: 50%;
+    height: 100%;
+    font-size: 1.5em;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+}
+
+.buy,.sell {
+    border: .5px solid rgba(255, 255, 255, 0.234);
+    border-bottom: 0;
+    color: white;
+    border-top-left-radius: 1em;
+}
+
+
+.inactiveAction {
+    border:0;
+    background-color: rgba(255, 255, 255, 0.038);
+    color: rgba(255, 255, 255, 0.352);
+}
+.inputContainer {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    border-right:.5px solid rgba(255, 255, 255, 0.234);
+    border-left:.5px solid rgba(255, 255, 255, 0.234);
+    box-sizing: border-box;
+
+
+}
+.inputAmount {
+    width:80%;
+    height:22%;
+    margin-top: 5%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 1em;
+    border:1px solid rgba(255, 255, 255, 0.234);
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+.inputAmount h5 {
+    display: block;
+    margin:0;
+    padding-left: 5%;
+    align-self: flex-end;
+}
+.inputChoiceRow {
+    width:100%;
+    height:100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around
+}
+.inputAmount:hover {
+    border: 1px solid orange;
+}
+.inputChoiceRow input {
+    width: 60%;
+    height: 60%;
+    font-size: 1.55em;
+    color: white; /* Text color for user input */
+    background-color: transparent;
+    border: none;
+    
+}
+.inputChoiceRow input[type="number"] {
+    -moz-appearance: textfield;
+}
+.inputChoiceRow input::-webkit-outer-spin-button,
+        .inputChoiceRow input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+.inputChoiceRow input::placeholder {
+    font-weight: 550;
+    color: rgba(255, 255, 255, 0.352); /* Placeholder text color */
+}
+.inputChoiceRow input:focus {
+    outline: none;
+}
+.placeholder {
+    width:20%;
+    height:60%;
+background-color: rgba(255, 255, 255, 0.191);;
+}
+.buttonContainer {
+    width:100%;
+    height:100%;
+    border-right: .5px solid rgba(255, 255, 255, 0.234);
+    border-left: .5px solid rgba(255, 255, 255, 0.234);
+    border-bottom: .5px solid rgba(255, 255, 255, 0.234);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: grid;
+
+}
+.buttonContainer button{
+    width:80%;
+    height:75%;
+    justify-self: center;
+    background-color: rgb(255, 179, 0);
+    border-radius: 1em;
+    font-size: 1.5em;
+}
+.howToBuyContainer {
+    height:50vh;
+    display: grid;
+    width:100%;
+    grid-template-rows: 20% 80%;
+    background-color: red;
+}
+.howtoBuyCrypto h1 {
+    display: block;
+    height:100%;
+
+}
+.buyingSteps {
+    height:100%;
+    display: flex;
+    background-color: aqua;
+}

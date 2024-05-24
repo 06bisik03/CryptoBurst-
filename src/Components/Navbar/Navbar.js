@@ -1,18 +1,18 @@
 import styles from "../../Styles/Components/Navbar/Navbar.module.css";
-import {Link} from "react-router-dom"
+
 const Navbar = () => {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbarLogoControlsContainer}>
         <div className={styles.logoContainer}>
-          <div>CryptoBurst</div>
+          <a href="/">CryptoBurst</a>
         </div>
         <div className={styles.controlsContainer}>
-          <a>Buy Crypto</a>
-          <a >Market</a>
-          <a >News</a>
-          <a >Exchange</a>
-          <a >Search</a>
+          <a href="/buycrypto">Buy Crypto</a>
+          <a>Market</a>
+          <a>News</a>
+          <a>Exchange</a>
+          <a>Search</a>
         </div>
       </div>
       <div className={styles.navbarRedirectContainer}>
