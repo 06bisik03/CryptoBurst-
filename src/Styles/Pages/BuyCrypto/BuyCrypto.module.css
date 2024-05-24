@@ -1,7 +1,6 @@
 .pageContainer {
     width:90%;
-    align-self: center;
-    height:200vh;
+    min-height:390vh;
     color:white;
 
 }

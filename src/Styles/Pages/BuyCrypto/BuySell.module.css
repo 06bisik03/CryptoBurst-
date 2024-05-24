@@ -1,12 +1,18 @@
 .buySellContainer {
     width:100%;
-    height:250vh;  
+    max-height:410vh; 
+    overflow: hidden;
     display: grid;
+
+
+
 }
 .buySell {
     width:100%;
-    height:80vh;
+    height:90vh;
     display: flex;
+    
+
 }
 .hotCryptos {
     width:50%;
@@ -50,34 +56,35 @@
     font-size: 1.5em;
     font-weight: 700;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    color:rgba(255, 255, 255, 0.352);
+    text-align: center;
 
 }
-
-.buy,.sell {
-    border: .5px solid rgba(255, 255, 255, 0.234);
-    border-bottom: 0;
-    color: white;
-    border-top-left-radius: 1em;
+.activeAction:after {
+    content : "";
+    height  :100%;
+    width   : 60%; 
+     /* or 100px */
+     right:0;
+     justify-self: center;
+    border-bottom:1px solid rgb(255, 179, 0);
+  }
+.activeAction {
+    font-size: 1.7em;
+    color:  rgb(255, 179, 0);
+    
 }
 
 
-.inactiveAction {
-    border:0;
-    background-color: rgba(255, 255, 255, 0.038);
-    color: rgba(255, 255, 255, 0.352);
-}
+
 .inputContainer {
     width:100%;
     height:100%;
     display: flex;
     flex-direction: column;
-    border-right:.5px solid rgba(255, 255, 255, 0.234);
-    border-left:.5px solid rgba(255, 255, 255, 0.234);
+  
     box-sizing: border-box;
 
 
@@ -89,7 +96,7 @@
     justify-self: center;
     align-self: center;
     border-radius: 1em;
-    border:1px solid rgba(255, 255, 255, 0.234);
+    border:.5px solid rgba(255, 255, 255, 0.234);
     display: grid;
     grid-template-rows: 40% 60%;
 }
@@ -106,6 +113,9 @@
 
     align-items: center;
     justify-content: space-around
+}
+.inputAmount:focus{
+    border: 1px solid orange;
 }
 .inputAmount:hover {
     border: 1px solid orange;
@@ -144,11 +154,7 @@ background-color: rgba(255, 255, 255, 0.191);;
 .buttonContainer {
     width:100%;
     height:100%;
-    border-right: .5px solid rgba(255, 255, 255, 0.234);
-    border-left: .5px solid rgba(255, 255, 255, 0.234);
-    border-bottom: .5px solid rgba(255, 255, 255, 0.234);
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+    
     display: grid;
 
 }
@@ -162,18 +168,49 @@ background-color: rgba(255, 255, 255, 0.191);;
 }
 .howToBuyContainer {
     height:50vh;
+    margin-top: 15vh;
+
     display: grid;
     width:100%;
-    grid-template-rows: 20% 80%;
-    background-color: red;
+    grid-template-rows: 25% 75%;
+
+
 }
-.howtoBuyCrypto h1 {
-    display: block;
-    height:100%;
+.howToBuyContainer h1 {
+    margin: 0;
+    font-size: 3em;
 
 }
 .buyingSteps {
     height:100%;
+    width:100%;
     display: flex;
-    background-color: aqua;
+
+    justify-content: space-between
+}
+.step {
+    width:30%;
+    height:100%;
+    display: grid;
+    border: 1px solid rgba(255, 255, 255, 0.234);
+    border-radius: 5%;
+    grid-template-rows: 40% 15% 55%;
+    
+}
+.step img {
+    width:30%;
+    align-self: flex-end;
+    margin-left: 7%;
+}
+.step h4 {
+    margin-left: 7%;
+    font-size:1.3em;
+    font-weight: 700;
+
+}
+.step h5{
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 1em;
+    font-weight: 300;
 }

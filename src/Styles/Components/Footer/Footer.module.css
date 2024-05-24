@@ -1,11 +1,13 @@
 .footerContainer {
   height: 80vh;
   width: 80%;
-align-self: center;
-  background-color: blue;
+align-self: flex-end;
+
   display: grid;
   grid-template-rows: 85% 15%;
   color: white;
+
+
 
 }
 .linksContainer {

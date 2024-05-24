@@ -10,9 +10,9 @@ const BuyCrypto = () => {
                     <li className={styles.inactive}>Withdraw</li>
                 </ul>
             </div>
-            <div>
+           
                 <BuySell/>
-            </div>
+           
 
         </div>
     )

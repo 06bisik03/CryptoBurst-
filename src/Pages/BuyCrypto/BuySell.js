@@ -1,4 +1,10 @@
 import styles from "../../Styles/Pages/BuyCrypto/BuySell.module.css";
+import stepOne from "../../Assets/howToBuyStep1.svg";
+import stepTwo from "../../Assets/howToBuyStep2.svg";
+import stepThree from "../../Assets/howToBuyStep3.svg";
+import TopGainer from "./TopGainer";
+import Populars from "./Populars";
+
 const BuySell = () => {
   return (
     <div className={styles.buySellContainer}>
@@ -9,7 +15,7 @@ const BuySell = () => {
         </div>
         <div className={styles.calculator}>
           <div className={styles.actionType}>
-            <div className={styles.buy}>Buy</div>
+            <div className={`${styles.buy} ${styles.activeAction}`}>Buy</div>
             <div className={`${styles.sell} ${styles.inactiveAction}`}>
               Sell
             </div>
@@ -40,18 +46,39 @@ const BuySell = () => {
         </div>
       </div>
       <div className={styles.howToBuyContainer}>
-        <h1>How to Buy Crypto</h1>
+        <div>
+          <h1>How to Buy Crypto</h1>
+        </div>
+
         <div className={styles.buyingSteps}>
-          <div>
-            <img />
-            <div> </div>
+          <div className={styles.step}>
+            <img src={stepOne} />
+            <h4>1.Enter Amount & Select Payment</h4>
+            <h5>
+              Enter the amount, select the available payment method, and choose
+              the payment account or bind the payment card.
+            </h5>
           </div>
-          <div></div>
-          <div></div>
+          <div className={styles.step}>
+            <img src={stepTwo} />
+            <h4>2.Confirm Order</h4>
+            <h5>
+              Confirmation of transaction detail information, including trading
+              pair quotes, fees, and other explanatory tips.
+            </h5>
+          </div>
+          <div className={styles.step}>
+            <img src={stepThree} />
+            <h4>3.Receive Crypto</h4>
+            <h5>
+              After successful payment, the purchased crypto to will reach Spot
+              Wallet.
+            </h5>
+          </div>
         </div>
       </div>
-      <div></div>
-      <div></div>
+      <TopGainer/>
+      <Populars />
     </div>
   );
 };
