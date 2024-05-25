@@ -1,6 +1,132 @@
 .topGainerContainer {
-    height: 140vh;
+  height: 160vh;
+  width: 90%;
+  margin-top: 15vh;
+  display: grid;
+  grid-template-rows: 3% 46% 46%;
+  row-gap: 2.5%;
+  justify-self: center;
+
+}
+.topGainerContainer h1 {
+    font-size: 2.4em;
+}
+
+.gainerContainer {
+  height: 100%;
+
+  display: flex;
+}
+
+.graphContainer {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 15% 85%;
+
+}
+
+.details {
+  width: 47.5%;
+
+  height: 100%;
+  margin-left: auto;
+}
+.financeDetails {
+  height: 100%;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 45% 55%;
+}
+.price {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.percentage {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.imageCoinToCurrency {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.conversions {
+  width: 100%;
+  height: 100%;
+  display: flex;
+    justify-content: space-between;
+
+}
+.conversionFromCoin, .conversionToCoin{
+    width:45%;
+    height:95%;
+    border-radius: inherit;
+    border-radius: 2em;
+    display: grid;
+    border: 1px solid rgba(255, 255, 255, 0.106);;
+    grid-template-rows: 8% repeat(7,1fr);
+    overflow: hidden;
+    padding: 3% 1.75% 0 1.75%;
+
+}
+.conversionFromCoin div, .conversionToCoin div {
     width:100%;
-margin-top: 15vh;
-    background-color: red;
+    height:100%;
+    align-items: center;
+    justify-content: space-between;
+    
+    display: flex;
+
+}
+.conversions h1 {
+    display: block;
+    font-size: 1.8em;
+}
+.conversions h3 {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.picFrom {
+  height: 80%;
+  aspect-ratio: 1/1;
+  align-self: center;
+  border-radius: 100%;
+
+  z-index: 1;
+  overflow: hidden;
+}
+
+.picFrom img,
+.picTo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.picTo {
+  height: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  align-self: center;
+  overflow: hidden;
+
+  transform: translateX(-20%);
+  z-index: 10;
+
+}
+.graph {
+  height: 100%;
+  width: 100%;
+}
+.fluctuation {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
