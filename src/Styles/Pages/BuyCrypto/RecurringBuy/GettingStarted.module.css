@@ -1,0 +1,49 @@
+.gettingStartedContainer {
+    width:100%;
+    height:55vh;
+    margin-top: 15vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+
+}
+.steps{ 
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.step {
+    width:16%;
+    height:80%;
+    padding: 2.5% 1.5% 2.5% 1.5%;
+    display: grid;
+    grid-template-rows: 35% auto;
+    background-color: rgb(43, 49, 58);
+
+}
+.step div:nth-of-type(1) {
+    height:100%;
+    width:50%;
+    display: grid;
+    align-items: center;
+
+}
+.step div:nth-of-type(2) {
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%
+
+}
+.step div:nth-of-type(2) h4{
+    font-size: 1.23em;
+    font-weight: 500;
+
+}
+.step div:nth-of-type(2) h5 {
+    font-size: .8em;
+    font-weight: 200;
+}

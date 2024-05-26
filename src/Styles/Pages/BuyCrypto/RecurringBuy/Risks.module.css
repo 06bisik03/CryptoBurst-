@@ -1,0 +1,26 @@
+.risksContainer {
+    width:100%;
+    height:50vh;
+    margin-top: 15vh;
+
+    display: grid;
+    grid-template-rows: 2fr 3fr 3fr 3fr;
+
+}
+
+.risk {
+    width:100%;
+    height:60%;
+    align-self: center;
+    display: grid;
+
+}
+.risksContainer h2 {
+    font-size: 2em;
+}
+.risksContainer h3 {
+    font-size: 1.2em;
+}.risksContainer h4{
+    font-size: .95em;
+    font-weight: 200;
+}

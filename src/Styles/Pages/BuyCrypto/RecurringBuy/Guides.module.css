@@ -1,0 +1,45 @@
+.guidesContainer {
+    width:100%;
+    height:50vh;
+    
+    display: grid;
+    grid-template-rows: 25% 75%;
+    margin-top: 15vh;
+    
+}
+.guides {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.guideLink {
+    width:30%;
+    height:100%;
+    display: grid;
+    grid-template-rows: 75% 25%;
+    cursor: pointer;transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+text-decoration: none;
+color:white;
+}
+.guideLink div{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+
+}
+.guideLink div img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.guideLink h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align:justify;
+}
+.guideLink:hover {
+    transform: scale(1.05);
+    color:orange;
+}
