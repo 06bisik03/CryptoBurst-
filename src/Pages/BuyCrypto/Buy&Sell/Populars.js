@@ -1,6 +1,6 @@
-import styles from "../../Styles/Pages/BuyCrypto/Populars.module.css";
-import testImg1 from "../../Assets/Bitcoin.png";
-import testImg2 from "../../Assets/tether.webp";
+import styles from "../../../Styles/Pages/BuyCrypto/Buy&Sell/Populars.module.css";
+import testImg1 from "../../../Assets/Bitcoin.png";
+import testImg2 from "../../../Assets/tether.webp";
 const Populars = () => {
   return (
     <div className={styles.popularsContainer}>

@@ -1,5 +1,6 @@
 import styles from '../../Styles/Pages/BuyCrypto/BuyCrypto.module.css'
-import BuySell from './BuySell';
+import BuySell from './Buy&Sell/BuySell';
+import RecurringBuy from './RecurringBuy/RecurringBuy';
 const BuyCrypto = () => {
     return (
         <div className={styles.pageContainer}>
@@ -11,7 +12,8 @@ const BuyCrypto = () => {
                 </ul>
             </div>
            
-                <BuySell/>
+                {/* <BuySell/> */}
+                <RecurringBuy />
            
 
         </div>

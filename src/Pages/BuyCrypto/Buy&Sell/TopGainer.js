@@ -1,6 +1,6 @@
-import styles from "../../Styles/Pages/BuyCrypto/TopGainer.module.css";
-import img1 from "../../Assets/Bitcoin.png";
-import img2 from "../../Assets/tether.webp";
+import styles from "../../../Styles/Pages/BuyCrypto/Buy&Sell/TopGainer.module.css";
+import img1 from "../../../Assets/Bitcoin.png";
+import img2 from "../../../Assets/tether.webp";
 const TopGainer = () => {
   return (
     <div className={styles.topGainerContainer}>

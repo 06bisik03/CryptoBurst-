@@ -1,7 +1,7 @@
-import styles from "../../Styles/Pages/BuyCrypto/BuySell.module.css";
-import stepOne from "../../Assets/howToBuyStep1.svg";
-import stepTwo from "../../Assets/howToBuyStep2.svg";
-import stepThree from "../../Assets/howToBuyStep3.svg";
+import styles from "../../../Styles/Pages/BuyCrypto/Buy&Sell/BuySell.module.css";
+import stepOne from "../../../Assets/howToBuyStep1.svg";
+import stepTwo from "../../../Assets/howToBuyStep2.svg";
+import stepThree from "../../../Assets/howToBuyStep3.svg";
 import TopGainer from "./TopGainer";
 import Populars from "./Populars";
 
