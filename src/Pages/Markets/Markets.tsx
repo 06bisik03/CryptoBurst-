@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import styles from "../../Styles/Pages/Markets/Markets.module.css";
 import MarketsOverview from "./MarketsOverview";
 
-const Markets = () => {
-  const [activeTab, setActiveTab] = useState("Markets Overview");
+const Markets: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<string>("Markets Overview");
 
-  const handleTabClick = (tabName) => {
+  const handleTabClick = (tabName: string) => {
     setActiveTab(tabName);
   };
 

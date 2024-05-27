@@ -1,9 +1,10 @@
-import styles from "../../../Styles/Pages/BuyCrypto/RecurringBuy/RecurringBuyIntro.module.css";
-import img1 from "../../../Assets/Bitcoin.png";
-import img2 from "../../../Assets/tether.webp";
-import { ArrowRight } from "../../../Components/Footer/SocialsContainer";
-import { useState } from "react";
-const RecurringBuyIntro = () => {
+import React, { useState } from 'react';
+import styles from '../../../Styles/Pages/BuyCrypto/RecurringBuy/RecurringBuyIntro.module.css';
+import img1 from '../../../Assets/Bitcoin.png';
+import img2 from '../../../Assets/tether.webp';
+import { ArrowRight } from '../../../Components/Footer/SocialsContainer';
+
+const RecurringBuyIntro: React.FC = () => {
   return (
     <div className={styles.recurringBuyContainer}>
       <div className={styles.actionsContainer}>
@@ -17,21 +18,21 @@ const RecurringBuyIntro = () => {
                 <div className={styles.assetInputs}>
                   <div className={styles.inputChoice}>
                     <div>
-                      <img src={img1} />
+                      <img src={img1} alt="Bitcoin" />
                     </div>
                     <h4>USD</h4>
                     <div>
-                      <ArrowRight />
+                      <ArrowRight h=".6em" translate={[5, 1]} />
                     </div>
                   </div>
                   <h2>To</h2>
                   <div className={styles.inputChoice}>
                     <div>
-                      <img src={img2} />
+                      <img src={img2} alt="Tether" />
                     </div>
                     <h4>USDT</h4>
                     <div>
-                      <ArrowRight />
+                      <ArrowRight h=".6em" translate={[5, 1]} />
                     </div>
                   </div>
                 </div>
@@ -55,11 +56,11 @@ const RecurringBuyIntro = () => {
           <div className={styles.topCryptos}>
             <h2>Top Cryptos</h2>
             <div className={styles.cryptoList}>
-                <TopCoinCard/>
-                <TopCoinCard/>
-                <TopCoinCard/>
-                <TopCoinCard/>
-                <TopCoinCard/>
+              <TopCoinCard />
+              <TopCoinCard />
+              <TopCoinCard />
+              <TopCoinCard />
+              <TopCoinCard />
             </div>
           </div>
         </div>
@@ -67,14 +68,16 @@ const RecurringBuyIntro = () => {
     </div>
   );
 };
+
 export default RecurringBuyIntro;
-const TopCoinCard = () => {
+
+const TopCoinCard: React.FC = () => {
   return (
     <div className={styles.coin}>
       <div className={styles.coinNamePrice}>
         <div className={styles.nameImage}>
           <div>
-            <img src={img1} />
+            <img src={img1} alt="Bitcoin" />
           </div>
           <h5>BTC</h5>
         </div>
@@ -84,15 +87,16 @@ const TopCoinCard = () => {
         </div>
       </div>
       <div className={styles.coinHistory}>
-        <h3>HistoricalROI</h3>
+        <h3>Historical ROI</h3>
         <h3>420.00%</h3>
       </div>
     </div>
   );
 };
-const DateTimePicker = () => {
-  const [selectedDay, setSelectedDay] = useState("");
-  const [selectedTime, setSelectedTime] = useState("");
+
+const DateTimePicker: React.FC = () => {
+  const [selectedDay, setSelectedDay] = useState<string>('');
+  const [selectedTime, setSelectedTime] = useState<string>('');
 
   return (
     <div className={styles.dateTimePicker}>
@@ -105,7 +109,7 @@ const DateTimePicker = () => {
           value={selectedDay}
           onChange={(e) => {
             setSelectedDay(e.target.value);
-            setSelectedTime(""); // Reset time when day is changed
+            setSelectedTime(''); // Reset time when day is changed
           }}
           className={styles.select}
         >
@@ -143,37 +147,38 @@ const DateTimePicker = () => {
 };
 
 const daysOfWeek = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
 ];
+
 const timeOptions = [
-  "00:00",
-  "01:00",
-  "02:00",
-  "03:00",
-  "04:00",
-  "05:00",
-  "06:00",
-  "07:00",
-  "08:00",
-  "09:00",
-  "10:00",
-  "11:00",
-  "12:00",
-  "13:00",
-  "14:00",
-  "15:00",
-  "16:00",
-  "17:00",
-  "18:00",
-  "19:00",
-  "20:00",
-  "21:00",
-  "22:00",
-  "23:00",
+  '00:00',
+  '01:00',
+  '02:00',
+  '03:00',
+  '04:00',
+  '05:00',
+  '06:00',
+  '07:00',
+  '08:00',
+  '09:00',
+  '10:00',
+  '11:00',
+  '12:00',
+  '13:00',
+  '14:00',
+  '15:00',
+  '16:00',
+  '17:00',
+  '18:00',
+  '19:00',
+  '20:00',
+  '21:00',
+  '22:00',
+  '23:00',
 ];

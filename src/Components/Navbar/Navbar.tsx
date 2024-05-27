@@ -1,6 +1,7 @@
-import styles from "../../Styles/Components/Navbar/Navbar.module.css";
+import React from 'react';
+import styles from '../../Styles/Components/Navbar/Navbar.module.css';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbarLogoControlsContainer}>
@@ -24,13 +25,13 @@ const Navbar = () => {
           />
           <form action="">
             <input type="search" required />
-            <i className={["fa", "fa-search", styles.fa].join(" ")} />
+            <i className={['fa', 'fa-search', styles.fa].join(' ')} />
           </form>
         </div>
-
         <div className={styles.logContainer}>Log In</div>
       </div>
     </div>
   );
 };
+
 export default Navbar;

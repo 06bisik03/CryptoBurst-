@@ -1,10 +1,11 @@
-import styles from "../../Styles/Pages/Intro/IntroPage.module.css";
-import { IntroGift } from "../../Components/Footer/SocialsContainer";
-import useGoogleLogin from "@react-oauth/google";
-import GoogleButton from "react-google-button";
-import AppleLogin from "../../Components/General/AppleLogin";
+import React from 'react';
+import styles from '../../Styles/Pages/Intro/IntroPage.module.css';
+import { IntroGift } from '../../Components/Footer/SocialsContainer';
+import { useGoogleLogin } from '@react-oauth/google';
+import GoogleButton from 'react-google-button';
+import AppleLogin from '../../Components/General/AppleLogin';
 
-const IntroPage = () => {
+const IntroPage: React.FC = () => {
   return (
     <div className={styles.background}>
       <div className={styles.introductionTextContainer}>
@@ -47,13 +48,14 @@ const IntroPage = () => {
     </div>
   );
 };
-export default IntroPage;
-const styleGoogle = {
-  display: "flex",
-  alignContent: "center",
-  width: "100%",
-  height: "100%",
-  borderRadius: "2em",
-  backgroundSize: "cover",
 
+const styleGoogle: React.CSSProperties = {
+  display: 'flex',
+  alignContent: 'center',
+  width: '100%',
+  height: '100%',
+  borderRadius: '2em',
+  backgroundSize: 'cover',
 };
+
+export default IntroPage;

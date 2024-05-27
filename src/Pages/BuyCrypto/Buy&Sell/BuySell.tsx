@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../../../Styles/Pages/BuyCrypto/Buy&Sell/BuySell.module.css";
 import stepOne from "../../../Assets/howToBuyStep1.svg";
 import stepTwo from "../../../Assets/howToBuyStep2.svg";
@@ -5,7 +6,7 @@ import stepThree from "../../../Assets/howToBuyStep3.svg";
 import TopGainer from "./TopGainer";
 import Populars from "./Populars";
 
-const BuySell = () => {
+const BuySell: React.FC = () => {
   return (
     <div className={styles.buySellContainer}>
       <div className={styles.buySell}>
@@ -28,7 +29,7 @@ const BuySell = () => {
                   type="number"
                   step="any"
                   placeholder="Enter Amount"
-                ></input>
+                />
                 <div className={styles.placeholder}></div>
               </div>
             </div>
@@ -52,34 +53,35 @@ const BuySell = () => {
 
         <div className={styles.buyingSteps}>
           <div className={styles.step}>
-            <img src={stepOne} />
-            <h4>1.Enter Amount & Select Payment</h4>
+            <img src={stepOne} alt="Step 1" />
+            <h4>1. Enter Amount & Select Payment</h4>
             <h5>
               Enter the amount, select the available payment method, and choose
               the payment account or bind the payment card.
             </h5>
           </div>
           <div className={styles.step}>
-            <img src={stepTwo} />
-            <h4>2.Confirm Order</h4>
+            <img src={stepTwo} alt="Step 2" />
+            <h4>2. Confirm Order</h4>
             <h5>
               Confirmation of transaction detail information, including trading
               pair quotes, fees, and other explanatory tips.
             </h5>
           </div>
           <div className={styles.step}>
-            <img src={stepThree} />
-            <h4>3.Receive Crypto</h4>
+            <img src={stepThree} alt="Step 3" />
+            <h4>3. Receive Crypto</h4>
             <h5>
-              After successful payment, the purchased crypto to will reach Spot
+              After successful payment, the purchased crypto will reach the Spot
               Wallet.
             </h5>
           </div>
         </div>
       </div>
-      <TopGainer/>
+      <TopGainer />
       <Populars />
     </div>
   );
 };
+
 export default BuySell;

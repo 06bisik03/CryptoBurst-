@@ -1,7 +1,9 @@
+import React from "react";
 import styles from "../../../Styles/Pages/BuyCrypto/Buy&Sell/TopGainer.module.css";
 import img1 from "../../../Assets/Bitcoin.png";
 import img2 from "../../../Assets/tether.webp";
-const TopGainer = () => {
+
+const TopGainer: React.FC = () => {
   return (
     <div className={styles.topGainerContainer}>
       <h1>Top Gainer of the Week</h1>
@@ -15,10 +17,10 @@ const TopGainer = () => {
             <div className={styles.percentage}>
               <div className={styles.imageCoinToCurrency}>
                 <div className={styles.picFrom}>
-                  <img src={img1} />
+                  <img src={img1} alt="Crypto 1" />
                 </div>
                 <div className={styles.picTo}>
-                  <img src={img2} />
+                  <img src={img2} alt="Crypto 2" />
                 </div>
               </div>
               <div className={styles.fluctuation}>
@@ -28,9 +30,7 @@ const TopGainer = () => {
           </div>
           <div className={styles.graph}></div>
         </div>
-        <div className={styles.details}>
-            
-        </div>
+        <div className={styles.details}></div>
       </div>
       <div className={styles.conversions}>
         <ConversionFromCoinToCurrency />
@@ -39,8 +39,8 @@ const TopGainer = () => {
     </div>
   );
 };
-export default TopGainer;
-const ConversionFromCurrencyToCoin = () => {
+
+const ConversionFromCurrencyToCoin: React.FC = () => {
   return (
     <div className={styles.conversionFromCoin}>
       <h1>USDT TO USD</h1>
@@ -75,34 +75,35 @@ const ConversionFromCurrencyToCoin = () => {
     </div>
   );
 };
-const ConversionFromCoinToCurrency = () => {
+
+const ConversionFromCoinToCurrency: React.FC = () => {
   return (
     <div className={styles.conversionToCoin}>
       <h1>USD TO USDT</h1>
       <div>
         <h3>0.5005144 USD</h3>
         <h3>0.5 USDT</h3>
-      </div>{" "}
+      </div>
       <div>
         <h3>0.5005144 USD</h3>
         <h3>0.5 USDT</h3>
-      </div>{" "}
+      </div>
       <div>
         <h3>0.5005144 USD</h3>
         <h3>0.5 USDT</h3>
-      </div>{" "}
+      </div>
       <div>
         <h3>0.5005144 USD</h3>
         <h3>0.5 USDT</h3>
-      </div>{" "}
+      </div>
       <div>
         <h3>0.5005144 USD</h3>
         <h3>0.5 USDT</h3>
-      </div>{" "}
+      </div>
       <div>
         <h3>0.5005144 USD</h3>
         <h3>0.5 USDT</h3>
-      </div>{" "}
+      </div>
       <div>
         <h3>0.5005144 USD</h3>
         <h3>0.5 USDT</h3>
@@ -110,3 +111,5 @@ const ConversionFromCoinToCurrency = () => {
     </div>
   );
 };
+
+export default TopGainer;

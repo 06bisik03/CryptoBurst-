@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   ArrowUp,
   CheckMark,
@@ -5,9 +6,10 @@ import {
   ShieldHeart,
   Key,
   Clock,
-} from "../../../Components/Footer/SocialsContainer";
-import styles from "../../../Styles/Pages/BuyCrypto/RecurringBuy/Benefits.module.css";
-const Benefits = () => {
+} from '../../../Components/Footer/SocialsContainer';
+import styles from '../../../Styles/Pages/BuyCrypto/RecurringBuy/Benefits.module.css';
+
+const Benefits: React.FC = () => {
   return (
     <div className={styles.benefitsContainer}>
       <h1>Benefits of DCA via Recurring Buy</h1>
@@ -36,7 +38,7 @@ const Benefits = () => {
               discipline regardless of market conditions.
             </h5>
           </div>
-        </div>{" "}
+        </div>
         <div className={styles.benefit}>
           <div className={styles.image}>
             <Shield />
@@ -48,7 +50,7 @@ const Benefits = () => {
               your investments and smoothing out price swings.
             </h5>
           </div>
-        </div>{" "}
+        </div>
         <div className={styles.benefit}>
           <div className={styles.image}>
             <Clock />
@@ -60,7 +62,7 @@ const Benefits = () => {
               cryptocurrencies you want to buy beforehand.
             </h5>
           </div>
-        </div>{" "}
+        </div>
         <div className={styles.benefit}>
           <div className={styles.image}>
             <Key />
@@ -72,7 +74,7 @@ const Benefits = () => {
               such as staking or spot trading.
             </h5>
           </div>
-        </div>{" "}
+        </div>
         <div className={styles.benefit}>
           <div className={styles.image}>
             <ShieldHeart />
@@ -89,4 +91,5 @@ const Benefits = () => {
     </div>
   );
 };
+
 export default Benefits;

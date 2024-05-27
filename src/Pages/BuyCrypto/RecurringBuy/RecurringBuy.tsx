@@ -1,10 +1,12 @@
+import React from "react";
 import styles from "../../../Styles/Pages/BuyCrypto/RecurringBuy/RecurringBuy.module.css";
 import Benefits from "./Benefits";
 import GettingStarted from "./GettingStarted";
 import Guides from "./Guides";
 import RecurringBuyIntro from "./RecurringBuyIntro";
 import Risks from "./Risks";
-const RecurringBuy = () => {
+
+const RecurringBuy: React.FC = () => {
   return (
     <div className={styles.recurringBuyContainer}>
       <RecurringBuyIntro />
@@ -15,4 +17,5 @@ const RecurringBuy = () => {
     </div>
   );
 };
+
 export default RecurringBuy;

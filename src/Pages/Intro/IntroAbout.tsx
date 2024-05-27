@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../../Styles/Pages/Intro/IntroAbout.module.css";
 import imgCryptoBurst from "../../Assets/CryptoBurst.png";
 import {
@@ -6,12 +7,13 @@ import {
   IntroBrave,
   IntroOpera,
 } from "../../Components/Footer/SocialsContainer";
-const IntroAbout = () => {
+
+const IntroAbout: React.FC = () => {
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.imageContainer}>
         <div className={styles.aboutImage}>
-          <img src={imgCryptoBurst} />
+          <img src={imgCryptoBurst} alt="Crypto Burst" />
         </div>
       </div>
       <div className={styles.textContainer}>
@@ -24,7 +26,7 @@ const IntroAbout = () => {
           </div>
         </div>
         <div className={styles.browsers}>
-          <h1>Our Preffered Browsers</h1>
+          <h1>Our Preferred Browsers</h1>
           <div className={styles.browserImg}>
             <IntroSafari />
             <IntroChrome />
@@ -36,4 +38,5 @@ const IntroAbout = () => {
     </div>
   );
 };
+
 export default IntroAbout;

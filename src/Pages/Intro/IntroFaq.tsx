@@ -1,12 +1,12 @@
-import { useState, useRef, useEffect } from "react";
-import styles from "../../Styles/Pages/Intro/IntroFaq.css";
+import React, { useState, useRef, useEffect } from 'react';
+import styles from '../../Styles/Pages/Intro/IntroFaq.css';
 
-const IntroFaq = () => {
-  const [selection, setSelection] = useState(null);
-  const contentRefs = useRef([]);
-  const containerRef = useRef(null);
+const IntroFaq: React.FC = () => {
+  const [selection, setSelection] = useState<number | null>(null);
+  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const handleSelect = (drawer) => {
+  const handleSelect = (drawer: number) => {
     setSelection(drawer);
   };
 
@@ -17,22 +17,21 @@ const IntroFaq = () => {
   useEffect(() => {
     contentRefs.current.forEach((ref, index) => {
       if (ref) {
-        ref.style.maxHeight =
-          selection === index + 1 ? `${ref.scrollHeight}px` : "0px";
+        ref.style.maxHeight = selection === index + 1 ? `${ref.scrollHeight}px` : '0px';
       }
     });
 
     // Adjust the height of the container based on the selected drawer
     if (containerRef.current) {
-      const selectedContent = contentRefs.current[selection - 1];
+      const selectedContent = contentRefs.current[selection! - 1];
       if (selectedContent) {
         const contentHeight = selectedContent.scrollHeight;
-        const titleHeight = selectedContent.previousElementSibling.scrollHeight;
+        const titleHeight = selectedContent.previousElementSibling!.scrollHeight;
         const newHeight =
           90 + ((contentHeight + titleHeight) / window.innerHeight) * 100;
         containerRef.current.style.height = `${newHeight}vh`;
       } else {
-        containerRef.current.style.height = "90vh";
+        containerRef.current.style.height = '90vh';
       }
     }
   }, [selection]);
@@ -85,7 +84,7 @@ const IntroFaq = () => {
           htmlFor="faq-drawer-2"
           onClick={selection === 2 ? handleDeselect : () => handleSelect(2)}
         >
-          What services does CyrptoBurst offer?
+          What services does CryptoBurst offer?
         </label>
         <div
           className="faq-drawer__content-wrapper"

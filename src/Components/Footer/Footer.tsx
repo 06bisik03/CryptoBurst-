@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../../Styles/Components/Footer/Footer.module.css";
 import {
   SocialsFacebook,
@@ -14,7 +15,8 @@ import {
   FunctionsCurrency,
   FunctionsTheme,
 } from "./SocialsContainer";
-const Footer = () => {
+
+const Footer: React.FC = () => {
   return (
     <div className={styles.footerContainer}>
       <div className={styles.linksContainer}>
@@ -52,49 +54,49 @@ const Footer = () => {
         <div className={styles.linkContainer}>
           <div>About Us</div>
           <div className={styles.links}>
-            <a>About</a>
-            <a>Announcements</a>
-            <a>News</a>
-            <a>Blog</a>
-            <a>Community</a>
-            <a>Terms</a>
-            <a>Sitemap</a>
-            <a>Risk Warning</a>
-            <a>Careers</a>
-            <a>Press</a>
-            <a>Legal</a>
+            <a href="#about">About</a>
+            <a href="#announcements">Announcements</a>
+            <a href="#news">News</a>
+            <a href="#blog">Blog</a>
+            <a href="#community">Community</a>
+            <a href="#terms">Terms</a>
+            <a href="#sitemap">Sitemap</a>
+            <a href="#risk-warning">Risk Warning</a>
+            <a href="#careers">Careers</a>
+            <a href="#press">Press</a>
+            <a href="#legal">Legal</a>
           </div>
         </div>
         <div className={styles.linkContainer}>
           <div>Products</div>
           <div className={styles.links}>
-            <a>Exchange</a>
-            <a>Buy Crypto</a>
-            <a>Academy</a>
-            <a>Leveraged Tokens</a>
-            <a>Auto-Invest</a>
-            <a>Research</a>
-            <a>Browse Prices</a>
-            <a>Learn & Earn</a>
-            <a>Bitcoin Price Prediction</a>
-            <a>Ethereum Price Prediciton</a>
-            <a>Buy Bitcoin</a>
-            <a>Buy Etherum</a>
-            <a>Buy Dogecoin</a>
-            <a>Buy Ripple</a>
-            <a>Buy BNB</a>
+            <a href="#exchange">Exchange</a>
+            <a href="#buy-crypto">Buy Crypto</a>
+            <a href="#academy">Academy</a>
+            <a href="#leveraged-tokens">Leveraged Tokens</a>
+            <a href="#auto-invest">Auto-Invest</a>
+            <a href="#research">Research</a>
+            <a href="#browse-prices">Browse Prices</a>
+            <a href="#learn-earn">Learn & Earn</a>
+            <a href="#bitcoin-price-prediction">Bitcoin Price Prediction</a>
+            <a href="#ethereum-price-prediction">Ethereum Price Prediction</a>
+            <a href="#buy-bitcoin">Buy Bitcoin</a>
+            <a href="#buy-ethereum">Buy Ethereum</a>
+            <a href="#buy-dogecoin">Buy Dogecoin</a>
+            <a href="#buy-ripple">Buy Ripple</a>
+            <a href="#buy-bnb">Buy BNB</a>
           </div>
         </div>
         <div className={styles.linkContainer}>
           <div>Support</div>
           <div className={styles.links}>
-            <a>Support Center</a>
-            <a>Product Feedback & Suggestions</a>
-            <a>Fees</a>
-            <a>APIs</a>
-            <a>Trading Rules</a>
-            <a>Resources</a>
-            <a>Project manager</a>
+            <a href="#support-center">Support Center</a>
+            <a href="#product-feedback">Product Feedback & Suggestions</a>
+            <a href="#fees">Fees</a>
+            <a href="#apis">APIs</a>
+            <a href="#trading-rules">Trading Rules</a>
+            <a href="#resources">Resources</a>
+            <a href="#project-manager">Project Manager</a>
           </div>
         </div>
       </div>
@@ -105,4 +107,5 @@ const Footer = () => {
     </div>
   );
 };
+
 export default Footer;

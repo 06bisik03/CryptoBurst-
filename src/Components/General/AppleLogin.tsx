@@ -1,9 +1,11 @@
+import React from "react";
 import styles from "../../Styles/Components/General/AppleLogin.module.css";
-const AppleLogin = () => {
+
+const AppleLogin: React.FC = () => {
   return (
     <div className={styles.loginContainer}>
       <svg
-        class="w-6 h-6 text-gray-800 dark:text-white"
+        className="w-6 h-6 text-gray-800 dark:text-white"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -17,4 +19,5 @@ const AppleLogin = () => {
     </div>
   );
 };
+
 export default AppleLogin;
