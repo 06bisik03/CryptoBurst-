@@ -1,0 +1,235 @@
+.marketsOverviewContainer {
+  width: 100%;
+
+  display: grid;
+}
+.coinListsContainer {
+  width: 100%;
+  height: 25vh;
+  margin-top: 2vh;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  /*total h 27vh*/
+}
+.coinList {
+  width: 20%;
+  height: 80%;
+  padding: 0.8em 1.3em 0.8em 1.3em;
+  display: grid;
+  grid-template-rows: 15% repeat(3, 1fr);
+  row-gap: 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.155);
+  border-radius: 1em;
+  color: white;
+}
+.listDetail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.listDetail div {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  transition: color 0.2s ease-in-out;
+}
+.listDetail div:hover {
+  color: orange;
+}
+.listDetail h4 {
+  font-size: 0.85em;
+  font-weight: 300;
+}
+.coin {
+  width: 100%;
+  height: 90%;
+
+  display: flex;
+}
+.imgCoin {
+  width: 12.5%;
+  aspect-ratio: 1/1;
+
+  border-radius: 100%;
+  overflow: hidden;
+}
+.imgCoin img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coinFinance {
+  width: 86%;
+  margin-left: auto;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+.coinFinance h5:nth-of-type(1) {
+  width: 35%;
+}
+.coinFinance h5:nth-of-type(2) {
+  width: 35%;
+  font-weight: 300;
+}
+.coinFinance h5:nth-of-type(3) {
+  width: 30%;
+  display: grid;
+  justify-content: flex-end;
+  font-weight: 300;
+}
+.marketChoices {
+  width: 100%;
+  height: 4vh;
+  margin-top: 5vh;
+  display: flex;
+
+  align-items: center;
+}
+.choices {
+  width: 70%;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
+}
+.active {
+  font-size: 1.3em;
+  color: orange;
+  transition: font-size 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.inactive {
+  font-size: 1em;
+  color: rgb(255, 255, 255, 0.155);
+  transition: font-size 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.allCoinsContainer {
+  width: 100%;
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+
+}
+.legends {
+  width: 100%;
+  min-height: 5vh;
+  display: flex;
+  background-color: aqua;
+  align-items: flex-start;
+
+}
+
+.legends h4 {
+    font-size: .8em;
+    font-weight: 400;
+}
+.legends div {
+  display: flex;
+    color:rgba(255, 255, 255, 0.694);
+  align-items: center;
+  gap: 0.35em;
+  justify-content: flex-end;
+}
+.legends div:nth-of-type(1) {
+  width: 35%;
+  justify-content: flex-start;
+}
+.legends div:nth-of-type(2) {
+  width: 12.5%;
+}
+.legends div:nth-of-type(3) {
+  width: 12.5%;
+}
+.legends div:nth-of-type(4) {
+  width: 17.5%;
+}
+.legends div:nth-of-type(5) {
+  width: 15%;
+}
+.legends div:nth-of-type(6) {
+  width: 7.5%;
+}
+
+.coinMarket {
+    width:100%;
+    height:4%;
+    display: flex;
+    background-color: bisque;
+}
+.allCoins {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap:1.25%;
+    background-color: chartreuse;
+}
+.coinIllustration {
+    width:35%;
+    display: flex;
+    align-items: center;
+    gap:.4em;
+    background-color: brown;
+}
+.coinIllustration div {
+    height:60%;
+    align-self: center;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: aqua;
+    overflow: hidden;
+}
+.coinIllustration div img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.coinIllustration h4 {
+    font-size: 1.1em;
+}
+.coinIllustration h5{
+    font-size: .8em;
+    font-weight: 300;
+}
+.coinPrice {
+    width:12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.1em;
+    font-weight: 450;
+
+}
+.coinChange {
+    width:12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.1em;
+    font-weight: 450;
+
+
+}
+.volume {
+    width:17.5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.1em;
+    font-weight: 450;
+
+}
+.marketCap {
+    width:15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.1em;
+    font-weight: 450;
+
+}

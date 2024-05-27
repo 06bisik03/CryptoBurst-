@@ -9,7 +9,7 @@ const Navbar = () => {
         </div>
         <div className={styles.controlsContainer}>
           <a href="/buycrypto">Buy Crypto</a>
-          <a>Market</a>
+          <a href="/markets">Markets</a>
           <a>News</a>
           <a>Exchange</a>
           <a>Search</a>

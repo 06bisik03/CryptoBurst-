@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BuyCrypto from "./Pages/BuyCrypto/BuyCrypto";
 import Home from "./Pages/Intro/Home";
+import Markets from "./Pages/Markets/Markets";
 function App() {
   return (
     <body>
@@ -15,6 +16,7 @@ function App() {
             <Routes>
               <Route index element={<Home/>} />
               <Route path="/buycrypto" element={<BuyCrypto />} />
+              <Route path="/markets" element={<Markets/>}/>
             </Routes>
           </BrowserRouter>
           <Footer />

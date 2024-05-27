@@ -609,14 +609,17 @@ const IntroOpera = () => {
     </svg>
   );
 };
-const ArrowRight = () => {
+const ArrowRight = ({ h, translate, glow }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 320 512"
       width=".5em"
-      height=".7em"
-      fill="#ffffff"
+      height={h === null ? ".7em" : h}
+      fill={glow ? glow : "rgb(161, 161, 161)"}
+      transform={
+        translate ? `translate(${translate[0]}, ${translate[1]})` : "none"
+      }
     >
       <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
     </svg>
@@ -638,12 +641,11 @@ const CheckMark = () => {
 };
 const ArrowUp = () => {
   return (
-    <svg 
-    
+    <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 576 512"
       height="3.5em"
-      style={{padding: "0", margin:"0"}}
+      style={{ padding: "0", margin: "0" }}
     >
       <path
         fill="#fcd535"
@@ -658,7 +660,7 @@ const Shield = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
       height="3.5em"
-      style={{padding: "0", margin:"0"}}
+      style={{ padding: "0", margin: "0" }}
     >
       <path
         fill="#fcd535"
@@ -673,7 +675,7 @@ const Clock = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
       height="3.5em"
-      style={{padding: "0", margin:"0"}}
+      style={{ padding: "0", margin: "0" }}
     >
       <path
         fill="#fcd535"
@@ -688,7 +690,7 @@ const Key = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
       height="3.5em"
-      style={{padding: "0", margin:"0"}}
+      style={{ padding: "0", margin: "0" }}
     >
       <path
         fill="#fcd535"
@@ -703,7 +705,7 @@ const ShieldHeart = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
       height="3.5em"
-      style={{padding: "0", margin:"0"}}
+      style={{ padding: "0", margin: "0" }}
     >
       <path
         fill="#fcd535"
@@ -724,7 +726,7 @@ const CreditCard = () => {
 };
 const Repeat = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  height="4em">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="4em">
       <path
         fill="#fcd535"
         d="M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z"
@@ -762,6 +764,13 @@ const AddPayment = () => {
     </svg>
   );
 };
+const Sort = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height=".7em">
+      <path   fill="	#FFFFFF" d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z" />
+    </svg>
+  );
+};
 export {
   SocialsInsta,
   SocialsX,
@@ -796,4 +805,5 @@ export {
   Cursor,
   Frequency,
   AddPayment,
+  Sort
 };

@@ -1,0 +1,38 @@
+.marketsContainer {
+  width: 90%;
+  height: 350vh;
+  display: grid;
+
+
+}
+.overview {
+  width: 100%;
+  height: 5vh;
+  display: grid;
+  align-items: center;
+
+
+}
+.choice {
+  width: 100%;
+  height:5vh;
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  line-height: 0;
+
+}
+.active {
+    font-size: 2em;
+    color:orange;
+    cursor: pointer;
+    transition: font-size 0.3s ease, color 0.3s ease
+}
+.inactive {
+    font-size: 1.5em;
+    color:rgba(255, 255, 255, 0.475);
+    cursor: pointer;
+    transition: font-size 0.3s ease, color 0.3s ease
+
+
+}

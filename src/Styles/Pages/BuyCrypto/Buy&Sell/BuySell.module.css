@@ -24,6 +24,9 @@
 .hotCryptos h1 {
     font-size: 2.5em;
     justify-content: center;
+
+    align-self: flex-end;
+    margin-bottom: 1em;
 }
 .cryptosContainer {
     width:85%;
