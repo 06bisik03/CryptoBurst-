@@ -1,8 +1,8 @@
 .marketsOverviewContainer {
   width: 100%;
-
   display: grid;
 }
+
 .coinListsContainer {
   width: 100%;
   height: 25vh;
@@ -84,13 +84,11 @@
   height: 4vh;
   margin-top: 5vh;
   display: flex;
-
   align-items: center;
 }
 .choices {
   width: 70%;
   height: 100%;
-
   display: flex;
   align-items: flex-end;
   gap: 2em;
@@ -109,7 +107,7 @@
 }
 .allCoinsContainer {
   width: 100%;
-  height: 170vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   margin-top: 5vh;
@@ -119,18 +117,17 @@
   width: 100%;
   min-height: 5vh;
   display: flex;
-  background-color: aqua;
-  align-items: flex-start;
 
+  align-items: flex-start;
 }
 
 .legends h4 {
-    font-size: .8em;
-    font-weight: 400;
+  font-size: 0.8em;
+  font-weight: 400;
 }
 .legends div {
   display: flex;
-    color:rgba(255, 255, 255, 0.694);
+  color: rgba(255, 255, 255, 0.694);
   align-items: center;
   gap: 0.35em;
   justify-content: flex-end;
@@ -156,80 +153,139 @@
 }
 
 .coinMarket {
-    width:100%;
-    height:4%;
-    display: flex;
-    background-color: bisque;
+  width: 100%;
+  height: 3.95%;
+  display: flex;
+  color: white;
 }
 .allCoins {
-    width:100%;
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    gap:1.25%;
-    background-color: chartreuse;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25%;
 }
 .coinIllustration {
-    width:35%;
-    display: flex;
-    align-items: center;
-    gap:.4em;
-    background-color: brown;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
 }
 .coinIllustration div {
-    height:60%;
-    align-self: center;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: aqua;
-    overflow: hidden;
+  height: 60%;
+  align-self: center;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  overflow: hidden;
 }
 .coinIllustration div img {
-    width:100%;
-    height:100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .coinIllustration h4 {
-    font-size: 1.1em;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 400;
 }
-.coinIllustration h5{
-    font-size: .8em;
-    font-weight: 300;
+.coinIllustration h5 {
+  font-size: 0.8em;
+  font-weight: 250;
+  color: rgba(255, 255, 255, 0.444);
 }
 .coinPrice {
-    width:12.5%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 1.1em;
-    font-weight: 450;
-
+  width: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1em;
+  font-weight: 300;
 }
 .coinChange {
-    width:12.5%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 1.1em;
-    font-weight: 450;
-
-
+  width: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1em;
+  font-weight: 300;
 }
 .volume {
-    width:17.5%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 1.1em;
-    font-weight: 450;
-
+  width: 17.5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1em;
+  font-weight: 300;
 }
 .marketCap {
-    width:15%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 1.1em;
-    font-weight: 450;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1em;
+  font-weight: 300;
+}
+.actions {
+  width: 7.5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.pagination button {
+background-color: transparent;
+  border-radius: .4em;
+border: none;
+  color:white;
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+
+.pagination span {
+  border-radius: 0.5em;
+  display: grid;
+
+  padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+.pagination span.ellipsis {
+  cursor: default;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0.5em;
+}
+
+
+
+.pagination .activePage {
+  background-color:orange;
+  color: black;
+  border-color: #333;
+}
+
+.paginationArrow {
+  cursor: pointer;
+  font-size: 1.2em;
+  margin: 0 5px;
+  color: white;
+}
+.paginationArrow:hover,.pagination button:hover  {
+  background-color: #fefefe27;
+}
+.paginationArrow.disabled {
+  cursor: not-allowed;
+  color: #4f4f4f;
+  background-color: transparent;
 }

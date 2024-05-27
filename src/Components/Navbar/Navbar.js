@@ -20,7 +20,7 @@ const Navbar = () => {
           <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <form action="">
             <input type="search" required />
