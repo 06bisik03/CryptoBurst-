@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import styles from "../../Styles/Pages/Markets/Markets.module.css";
-import MarketsOverview from "./MarketsOverview";
+import styles from "../../Styles/Pages/Markets/MarketsOverview/Markets.module.css";
+import MarketsOverview from "./MarketsOverview/MarketsOverview";
+import TradingData from "./TradingData/TradingData";
 
 const Markets: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("Markets Overview");
@@ -30,7 +31,8 @@ const Markets: React.FC = () => {
             Trading Data
           </h1>
         </div>
-        <MarketsOverview />
+
+        {activeTab === "Markets Overview" ? <MarketsOverview /> : <TradingData/>}
       </div>
     </div>
   );

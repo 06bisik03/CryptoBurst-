@@ -26,3 +26,8 @@ export interface PageButtonProps {
   items: Item[];
   onChange: (newPage: number) => void;
 }
+export interface CustomDropdownProps {
+  options: string[];
+  selected: string;
+  onChange: (selected: string) => void;
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../../../Styles/Pages/BuyCrypto/RecurringBuy/RecurringBuyIntro.module.css';
 import img1 from '../../../Assets/Bitcoin.png';
 import img2 from '../../../Assets/tether.webp';
-import { ArrowRight } from '../../../Components/Footer/SocialsContainer';
+import { ArrowRightIcon } from '../../../Components/Footer/SocialsContainer';
 
 const RecurringBuyIntro: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const RecurringBuyIntro: React.FC = () => {
                     </div>
                     <h4>USD</h4>
                     <div>
-                      <ArrowRight h=".6em" translate={[5, 1]} />
+                      <ArrowRightIcon h=".6em" translate={[5, 1]} />
                     </div>
                   </div>
                   <h2>To</h2>
@@ -32,7 +32,7 @@ const RecurringBuyIntro: React.FC = () => {
                     </div>
                     <h4>USDT</h4>
                     <div>
-                      <ArrowRight h=".6em" translate={[5, 1]} />
+                      <ArrowRightIcon h=".6em" translate={[5, 1]} />
                     </div>
                   </div>
                 </div>

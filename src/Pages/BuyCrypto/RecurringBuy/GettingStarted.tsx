@@ -1,10 +1,10 @@
 import React from "react";
 import {
-  AddPayment,
-  CreditCard,
-  Cursor,
-  Frequency,
-  Repeat,
+  AddPaymentIcon,
+  CreditCardIcon,
+  CursorIcon,
+  FrequencyIcon,
+  RepeatIcon,
 } from "../../../Components/Footer/SocialsContainer";
 import styles from "../../../Styles/Pages/BuyCrypto/RecurringBuy/GettingStarted.module.css";
 
@@ -15,7 +15,7 @@ const GettingStarted: React.FC = () => {
       <div className={styles.steps}>
         <div className={styles.step}>
           <div>
-            <CreditCard />
+            <CreditCardIcon />
           </div>
           <div>
             <h4>Select debit/credit card</h4>
@@ -26,7 +26,7 @@ const GettingStarted: React.FC = () => {
         </div>
         <div className={styles.step}>
           <div>
-            <Repeat />
+            <RepeatIcon />
           </div>
           <div>
             <h4>Select crypto and enable Recurring Buy</h4>
@@ -37,7 +37,7 @@ const GettingStarted: React.FC = () => {
         </div>
         <div className={styles.step}>
           <div>
-            <Cursor />
+            <CursorIcon />
           </div>
           <div>
             <h4>Select your fiat currency</h4>
@@ -46,7 +46,7 @@ const GettingStarted: React.FC = () => {
         </div>
         <div className={styles.step}>
           <div>
-            <Frequency />
+            <FrequencyIcon />
           </div>
           <div>
             <h4>Set up the frequency</h4>
@@ -55,7 +55,7 @@ const GettingStarted: React.FC = () => {
         </div>
         <div className={styles.step}>
           <div>
-            <AddPayment />
+            <AddPaymentIcon />
           </div>
           <div>
             <h4>Select your payment methods</h4>

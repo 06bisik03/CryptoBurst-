@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../../Styles/Pages/Markets/MarketsOverview.module.css";
-import { ArrowRight } from "../../Components/Footer/SocialsContainer";
-import img1 from "../../Assets/Bitcoin.png";
+import styles from "../../../Styles/Pages/Markets/MarketsOverview/MarketsOverview.module.css";
+import { ArrowRightIcon } from "../../../Components/Footer/SocialsContainer";
+import img1 from "../../../Assets/Bitcoin.png";
 const CoinList: React.FC = () => {
   return (
     <div className={styles.coinListsContainer}>
@@ -23,7 +23,7 @@ const CoinContainer: React.FC = () => {
         <h4>Hot Coins</h4>
         <div>
           <h4>More</h4>
-          <ArrowRight h=".6em" translate={[5, 1]} />
+          <ArrowRightIcon h=".6em" translate={[5, 1]} />
         </div>
       </div>
       <Coin />

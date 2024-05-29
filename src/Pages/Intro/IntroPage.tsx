@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../Styles/Pages/Intro/IntroPage.module.css';
-import { IntroGift } from '../../Components/Footer/SocialsContainer';
+import { IntroGiftIcon } from '../../Components/Footer/SocialsContainer';
 import { useGoogleLogin } from '@react-oauth/google';
 import GoogleButton from 'react-google-button';
 import AppleLogin from '../../Components/General/AppleLogin';
@@ -22,7 +22,7 @@ const IntroPage: React.FC = () => {
               <button>Sign Up</button>
             </div>
             <a className={styles.signUpIncentive}>
-              <IntroGift />
+              <IntroGiftIcon />
               Sign Up now and get up to 100 USDT in rewards
             </a>
           </div>

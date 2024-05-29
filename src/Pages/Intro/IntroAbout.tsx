@@ -2,10 +2,10 @@ import React from "react";
 import styles from "../../Styles/Pages/Intro/IntroAbout.module.css";
 import imgCryptoBurst from "../../Assets/CryptoBurst.png";
 import {
-  IntroSafari,
-  IntroChrome,
-  IntroBrave,
-  IntroOpera,
+  IntroSafariIcon,
+  IntroChromeIcon,
+  IntroBraveIcon,
+  IntroOperaIcon,
 } from "../../Components/Footer/SocialsContainer";
 
 const IntroAbout: React.FC = () => {
@@ -28,10 +28,10 @@ const IntroAbout: React.FC = () => {
         <div className={styles.browsers}>
           <h1>Our Preferred Browsers</h1>
           <div className={styles.browserImg}>
-            <IntroSafari />
-            <IntroChrome />
-            <IntroOpera />
-            <IntroBrave />
+            <IntroSafariIcon />
+            <IntroChromeIcon />
+            <IntroOperaIcon />
+            <IntroBraveIcon />
           </div>
         </div>
       </div>

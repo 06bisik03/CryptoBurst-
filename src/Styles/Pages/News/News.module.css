@@ -1,0 +1,58 @@
+.newsContainer {
+  width: 90%;
+  justify-self: center;
+  height: 250vh;
+  margin-top: 5vh;
+  display: flex;
+  margin-bottom: 15vh;
+}
+.newsChoices {
+  width: 20%;
+  background-color: aqua;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.newsContent {
+  width: 50%;
+  height: 100%;
+  background-color: chocolate;
+}
+.searchtrending {
+  width: 30%;
+  height: 100%;
+  background-color: cornsilk;
+}
+.profile {
+  width: 90%;
+
+  height: 10%;
+  margin-bottom: 5%;
+  align-self: center;
+  background-color: blue;
+}
+
+.newsMenu {
+  width: 90%;
+  height: 40%;
+    display: grid;
+    row-gap: 5%;
+    margin-left: 5%;
+  background-color: rgb(233, 165, 116);
+}
+.newsMenu div {
+    width:80%;
+    height:100%;
+    padding : 0 8%;
+    border-radius: .8em;
+    background-color:chartreuse;
+    justify-self: center;
+    align-items: center;
+    gap:5%;
+    display: flex;
+
+}
+.newsMenu div h4 {
+    font-size: 1.05em;
+}

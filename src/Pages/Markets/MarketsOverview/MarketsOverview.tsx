@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
-import styles from "../../Styles/Pages/Markets/MarketsOverview.module.css";
+import styles from "../../../Styles/Pages/Markets/MarketsOverview/MarketsOverview.module.css";
 import CoinTable from "./CoinTable";
 import CoinList from "./CoinList";
-import { CoinTypeSelectorProps} from "../../types";
-import { SAMPLE_ITEMS, COIN_FILTERS } from "../../Constants";
+import { CoinTypeSelectorProps} from "../../../types";
+import { SAMPLE_ITEMS, COIN_FILTERS } from "../../../Constants";
 
 
 const MarketsOverview = () => {

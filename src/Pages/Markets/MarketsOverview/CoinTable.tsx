@@ -1,11 +1,11 @@
 import React from "react";
-import usePagination from "../../Hooks/UsePagination";
-import styles from "../../Styles/Pages/Markets/MarketsOverview.module.css";
-import { Sort } from "../../Components/Footer/SocialsContainer";
-import PaginationControls from "./PaginationControls"; // Adjust the path as necessary
-import { Details,Trade } from "../../Components/Footer/SocialsContainer";
-import img1 from '../../Assets/BTC.jpeg'
-import { Item,CoinTableProps } from "../../types";
+import usePagination from "../../../Hooks/UsePagination";
+import styles from "../../../Styles/Pages/Markets/MarketsOverview/MarketsOverview.module.css";
+
+import PaginationControls from "./PaginationControls"
+import { DetailsIcon,TradeIcon,SortIcon } from "../../../Components/Footer/SocialsContainer";
+import img1 from '../../../Assets/BTC.jpeg'
+import { Item,CoinTableProps } from "../../../types";
 const CoinTable: React.FC<CoinTableProps> = ({ items, onChange }) => {
   const {
     currentPage,
@@ -21,23 +21,23 @@ const CoinTable: React.FC<CoinTableProps> = ({ items, onChange }) => {
       <div className={styles.legends}>
         <div>
           <h4>Name</h4>
-          <Sort />
+          <SortIcon />
         </div>
         <div>
           <h4>Price</h4>
-          <Sort />
+          <SortIcon />
         </div>
         <div>
           <h4>Change</h4>
-          <Sort />
+          <SortIcon />
         </div>
         <div>
           <h4>24h Volume</h4>
-          <Sort />
+          <SortIcon />
         </div>
         <div>
           <h4>Market Cap</h4>
-          <Sort />
+          <SortIcon />
         </div>
         <div>
           <h4>Actions</h4>
@@ -50,7 +50,7 @@ const CoinTable: React.FC<CoinTableProps> = ({ items, onChange }) => {
       </div>
       <PaginationControls
         currentPage={currentPage}
-        handleClick={(i) => {
+        handleClick={(i:number) => {
           handleClick(i);
           onChange && onChange(i);
         }}
@@ -79,8 +79,8 @@ const Coin: React.FC = () => {
       <div className={styles.volume}>$15.21B</div>
       <div className={styles.marketCap}>$1,355.25B</div>
       <div className={styles.actions}>
-        <Details />
-        <Trade />
+        <DetailsIcon />
+        <TradeIcon />
       </div>
     </div>
   );

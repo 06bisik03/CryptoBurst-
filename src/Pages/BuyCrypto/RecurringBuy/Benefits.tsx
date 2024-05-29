@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-  ArrowUp,
-  CheckMark,
-  Shield,
-  ShieldHeart,
-  Key,
-  Clock,
+  ArrowUpIcon,
+  CheckMarkIcon,
+  ShieldIcon,
+  ShieldHeartIcon,
+  KeyIcon,
+  ClockIcon,
 } from '../../../Components/Footer/SocialsContainer';
 import styles from '../../../Styles/Pages/BuyCrypto/RecurringBuy/Benefits.module.css';
 
@@ -16,7 +16,7 @@ const Benefits: React.FC = () => {
       <div className={styles.benefits}>
         <div className={styles.benefit}>
           <div className={styles.image}>
-            <ArrowUp />
+            <ArrowUpIcon />
           </div>
           <div className={styles.explanation}>
             <h4>Steady Portfolio Growth</h4>
@@ -29,7 +29,7 @@ const Benefits: React.FC = () => {
         </div>
         <div className={styles.benefit}>
           <div className={styles.image}>
-            <CheckMark />
+            <CheckMarkIcon />
           </div>
           <div className={styles.explanation}>
             <h4>Disciplined Saving</h4>
@@ -41,7 +41,7 @@ const Benefits: React.FC = () => {
         </div>
         <div className={styles.benefit}>
           <div className={styles.image}>
-            <Shield />
+            <ShieldIcon />
           </div>
           <div className={styles.explanation}>
             <h4>Risk Reduction</h4>
@@ -53,7 +53,7 @@ const Benefits: React.FC = () => {
         </div>
         <div className={styles.benefit}>
           <div className={styles.image}>
-            <Clock />
+            <ClockIcon />
           </div>
           <div className={styles.explanation}>
             <h4>Convenience & Flexibility</h4>
@@ -65,7 +65,7 @@ const Benefits: React.FC = () => {
         </div>
         <div className={styles.benefit}>
           <div className={styles.image}>
-            <Key />
+            <KeyIcon />
           </div>
           <div className={styles.explanation}>
             <h4>Easy Access to CryptoBurst Ecosystem</h4>
@@ -77,7 +77,7 @@ const Benefits: React.FC = () => {
         </div>
         <div className={styles.benefit}>
           <div className={styles.image}>
-            <ShieldHeart />
+            <ShieldHeartIcon />
           </div>
           <div className={styles.explanation}>
             <h4>Emotional Detachment</h4>

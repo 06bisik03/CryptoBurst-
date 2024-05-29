@@ -1,19 +1,19 @@
 import React from "react";
 import styles from "../../Styles/Components/Footer/Footer.module.css";
 import {
-  SocialsFacebook,
-  SocialsGithub,
-  SocialsInsta,
-  SocialsX,
-  SocialsLinkedIn,
-  SocialsTelegram,
-  SocialsDiscord,
-  SocialsWhatsapp,
-  SocialsReddit,
-  SocialsYoutube,
-  FunctionsWorld,
-  FunctionsCurrency,
-  FunctionsTheme,
+  SocialsFacebookIcon,
+  SocialsGithubIcon,
+  SocialsInstaIcon,
+  SocialsXIcon,
+  SocialsLinkedInIcon,
+  SocialsTelegramIcon,
+  SocialsDiscordIcon,
+  SocialsWhatsappIcon,
+  SocialsRedditIcon,
+  SocialsYoutubeIcon,
+  FunctionsWorldIcon,
+  FunctionsCurrencyIcon,
+  FunctionsThemeIcon,
 } from "./SocialsContainer";
 
 const Footer: React.FC = () => {
@@ -24,29 +24,29 @@ const Footer: React.FC = () => {
           <div className={styles.socials}>
             <div>Community</div>
             <div className={styles.socialsButtons}>
-              <SocialsInsta />
-              <SocialsX />
-              <SocialsFacebook />
-              <SocialsGithub />
-              <SocialsDiscord />
-              <SocialsLinkedIn />
-              <SocialsReddit />
-              <SocialsTelegram />
-              <SocialsYoutube />
-              <SocialsWhatsapp />
+              <SocialsInstaIcon />
+              <SocialsXIcon />
+              <SocialsFacebookIcon />
+              <SocialsGithubIcon />
+              <SocialsDiscordIcon />
+              <SocialsLinkedInIcon />
+              <SocialsRedditIcon />
+              <SocialsTelegramIcon />
+              <SocialsYoutubeIcon />
+              <SocialsWhatsappIcon />
             </div>
           </div>
           <div className={styles.functions}>
             <div className={styles.functionality}>
-              <FunctionsWorld />
+              <FunctionsWorldIcon />
               <div>English</div>
             </div>
             <div className={styles.functionality}>
-              <FunctionsCurrency />
+              <FunctionsCurrencyIcon />
               <div>USD</div>
             </div>
             <div className={styles.functionality}>
-              <FunctionsTheme />
+              <FunctionsThemeIcon />
               <div>Theme</div>
             </div>
           </div>

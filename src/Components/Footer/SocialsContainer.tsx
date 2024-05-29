@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styles from "../../Styles/Components/Footer/Footer.module.css";
 import styles2 from "../../Styles/Components/Footer/Socials.module.css";
 import "https://unpkg.com/jb-time-picker";
@@ -6,7 +6,7 @@ interface SvgProps {
   h?: string | number | null;
   translate?: [number, number];
 }
-const SocialsInsta: React.FC = () => {
+const SocialsInstaIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ const SocialsInsta: React.FC = () => {
   );
 };
 
-const SocialsX: React.FC = () => {
+const SocialsXIcon: React.FC = () => {
   return (
     <svg
       className={styles.socialsBtn}
@@ -76,7 +76,7 @@ const SocialsX: React.FC = () => {
   );
 };
 
-const SocialsFacebook: React.FC = () => {
+const SocialsFacebookIcon: React.FC = () => {
   return (
     <svg
       className={styles.socialsBtn}
@@ -111,7 +111,7 @@ const SocialsFacebook: React.FC = () => {
   );
 };
 
-const SocialsGithub: React.FC = () => {
+const SocialsGithubIcon: React.FC = () => {
   return (
     <svg
       className={styles.socialsBtn}
@@ -146,7 +146,7 @@ const SocialsGithub: React.FC = () => {
   );
 };
 
-const SocialsYoutube: React.FC = () => {
+const SocialsYoutubeIcon: React.FC = () => {
   return (
     <svg
       className={styles.socialsBtn}
@@ -181,7 +181,7 @@ const SocialsYoutube: React.FC = () => {
   );
 };
 
-const SocialsLinkedIn: React.FC = () => {
+const SocialsLinkedInIcon: React.FC = () => {
   return (
     <svg
       className={styles.socialsBtn}
@@ -216,7 +216,7 @@ const SocialsLinkedIn: React.FC = () => {
   );
 };
 
-const SocialsReddit: React.FC = () => {
+const SocialsRedditIcon: React.FC = () => {
   return (
     <svg
       className={styles.socialsBtn}
@@ -251,7 +251,7 @@ const SocialsReddit: React.FC = () => {
   );
 };
 
-const SocialsWhatsapp: React.FC = () => {
+const SocialsWhatsappIcon: React.FC = () => {
   return (
     <svg
       className={styles.socialsBtn}
@@ -286,7 +286,7 @@ const SocialsWhatsapp: React.FC = () => {
   );
 };
 
-const SocialsDiscord: React.FC = () => {
+const SocialsDiscordIcon: React.FC = () => {
   return (
     <svg
       className={styles.socialsBtn}
@@ -321,7 +321,7 @@ const SocialsDiscord: React.FC = () => {
   );
 };
 
-const SocialsTelegram: React.FC = () => {
+const SocialsTelegramIcon: React.FC = () => {
   return (
     <svg
       className={styles.socialsBtn}
@@ -356,7 +356,7 @@ const SocialsTelegram: React.FC = () => {
   );
 };
 
-const FunctionsWorld: React.FC = () => {
+const FunctionsWorldIcon: React.FC = () => {
   return (
     <svg
       className="w-6 h-6 text-gray-800 dark:text-white"
@@ -378,7 +378,7 @@ const FunctionsWorld: React.FC = () => {
   );
 };
 
-const FunctionsCurrency: React.FC = () => {
+const FunctionsCurrencyIcon: React.FC = () => {
   return (
     <svg
       className="w-6 h-6 text-gray-800 dark:text-white"
@@ -400,7 +400,7 @@ const FunctionsCurrency: React.FC = () => {
   );
 };
 
-const FunctionsTheme: React.FC = () => {
+const FunctionsThemeIcon: React.FC = () => {
   return (
     <div className={styles.switchContainer}>
       <label className={styles.themeSwitch}>
@@ -411,7 +411,7 @@ const FunctionsTheme: React.FC = () => {
   );
 };
 
-const IntroGift: React.FC = () => {
+const IntroGiftIcon: React.FC = () => {
   return (
     <svg
       width="24"
@@ -430,7 +430,7 @@ const IntroGift: React.FC = () => {
   );
 };
 
-const IntroBinance: React.FC = () => {
+const IntroBinanceIcon: React.FC = () => {
   return (
     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <title>Binance</title>
@@ -439,7 +439,7 @@ const IntroBinance: React.FC = () => {
   );
 };
 
-const IntroMotorola: React.FC = () => {
+const IntroMotorolaIcon: React.FC = () => {
   return (
     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <title>Motorola</title>
@@ -448,7 +448,7 @@ const IntroMotorola: React.FC = () => {
   );
 };
 
-const IntroCryptoCom: React.FC = () => {
+const IntroCryptoComIcon: React.FC = () => {
   return (
     <a href="https://logowik.com/crypto-com-logo-vector-svg-pdf-ai-eps-cdr-free-download-6819.html">
       <img src="https://logowik.com/content/uploads/images/cryptocom6177.jpg" />
@@ -456,7 +456,7 @@ const IntroCryptoCom: React.FC = () => {
   );
 };
 
-const IntroSafari: React.FC = () => {
+const IntroSafariIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -492,7 +492,7 @@ const IntroSafari: React.FC = () => {
   );
 };
 
-const IntroChrome: React.FC = () => {
+const IntroChromeIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -540,7 +540,7 @@ const IntroChrome: React.FC = () => {
   );
 };
 
-const IntroBrave: React.FC = () => {
+const IntroBraveIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -611,7 +611,7 @@ const IntroBrave: React.FC = () => {
   );
 };
 
-const IntroOpera: React.FC = () => {
+const IntroOperaIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -633,8 +633,7 @@ const IntroOpera: React.FC = () => {
   );
 };
 
-
-const ArrowRight: React.FC<SvgProps> = ({ h, translate }) => {
+const ArrowRightIcon: React.FC<SvgProps> = ({ h, translate }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -651,7 +650,7 @@ const ArrowRight: React.FC<SvgProps> = ({ h, translate }) => {
   );
 };
 
-const CheckMark: React.FC = () => {
+const CheckMarkIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -666,7 +665,7 @@ const CheckMark: React.FC = () => {
   );
 };
 
-const ArrowUp: React.FC = () => {
+const ArrowUpIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -682,7 +681,7 @@ const ArrowUp: React.FC = () => {
   );
 };
 
-const Shield: React.FC = () => {
+const ShieldIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -698,7 +697,7 @@ const Shield: React.FC = () => {
   );
 };
 
-const Clock: React.FC = () => {
+const ClockIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -714,7 +713,7 @@ const Clock: React.FC = () => {
   );
 };
 
-const Key: React.FC = () => {
+const KeyIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -730,7 +729,7 @@ const Key: React.FC = () => {
   );
 };
 
-const ShieldHeart: React.FC = () => {
+const ShieldHeartIcon: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -746,7 +745,7 @@ const ShieldHeart: React.FC = () => {
   );
 };
 
-const CreditCard: React.FC = () => {
+const CreditCardIcon: React.FC = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="4em">
       <path
@@ -757,7 +756,7 @@ const CreditCard: React.FC = () => {
   );
 };
 
-const Repeat: React.FC = () => {
+const RepeatIcon: React.FC = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="4em">
       <path
@@ -768,7 +767,7 @@ const Repeat: React.FC = () => {
   );
 };
 
-const Cursor: React.FC = () => {
+const CursorIcon: React.FC = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="4em">
       <path
@@ -779,7 +778,7 @@ const Cursor: React.FC = () => {
   );
 };
 
-const Frequency: React.FC = () => {
+const FrequencyIcon: React.FC = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="4em">
       <path
@@ -790,7 +789,7 @@ const Frequency: React.FC = () => {
   );
 };
 
-const AddPayment: React.FC = () => {
+const AddPaymentIcon: React.FC = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="4em">
       <path
@@ -801,7 +800,7 @@ const AddPayment: React.FC = () => {
   );
 };
 
-const Sort: React.FC = () => {
+const SortIcon: React.FC = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height=".7em">
       <path
@@ -812,10 +811,15 @@ const Sort: React.FC = () => {
   );
 };
 
-const Details: React.FC = () => {
+const DetailsIcon: React.FC = () => {
   return (
     <div className={styles2.details}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" height="1em" className={styles2.detailsIcon}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 192 512"
+        height="1em"
+        className={styles2.detailsIcon}
+      >
         <path d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z" />
       </svg>
       <div className={styles2.tooltip}>Detail</div>
@@ -823,52 +827,89 @@ const Details: React.FC = () => {
   );
 };
 
-const Trade: React.FC = () => {
+const TradeIcon: React.FC = () => {
   return (
     <div className={styles2.details}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" className={styles2.detailsIcon}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+        height="1em"
+        className={styles2.detailsIcon}
+      >
         <path d="M438.6 150.6c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.7 96 32 96C14.3 96 0 110.3 0 128s14.3 32 32 32l306.7 0-41.4 41.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96zm-333.3 352c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 416 416 416c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0 41.4-41.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96z" />
       </svg>
       <div className={styles2.tooltip}>Trade</div>
     </div>
   );
 };
+const NewsIcon: React.FC = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1.5em">
+      <path d="M168 80c-13.3 0-24 10.7-24 24V408c0 8.4-1.4 16.5-4.1 24H440c13.3 0 24-10.7 24-24V104c0-13.3-10.7-24-24-24H168zM72 480c-39.8 0-72-32.2-72-72V112C0 98.7 10.7 88 24 88s24 10.7 24 24V408c0 13.3 10.7 24 24 24s24-10.7 24-24V104c0-39.8 32.2-72 72-72H440c39.8 0 72 32.2 72 72V408c0 39.8-32.2 72-72 72H72zM176 136c0-13.3 10.7-24 24-24h96c13.3 0 24 10.7 24 24v80c0 13.3-10.7 24-24 24H200c-13.3 0-24-10.7-24-24V136zm200-24h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H376c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H376c-13.3 0-24-10.7-24-24s10.7-24 24-24zM200 272H408c13.3 0 24 10.7 24 24s-10.7 24-24 24H200c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80H408c13.3 0 24 10.7 24 24s-10.7 24-24 24H200c-13.3 0-24-10.7-24-24s10.7-24 24-24z" />
+    </svg>
+  );
+};
+const HouseIcon: React.FC = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="1.5em">
+      <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+    </svg>
+  );
+};
+const ProfileIcon: React.FC = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1.5em">
+      <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+    </svg>
+  );
+};
+const TrendingIcon: React.FC = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1.5em">
+      <path d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5c-16.5-21-46-58.5-62.8-79.8c-6.3-8-18.3-8.1-24.7-.1c-33.8 42.5-50.8 69.3-50.8 99.4C112 375.4 162.6 416 225.7 416z" />
+    </svg>
+  );
+};
 
 export {
-  SocialsInsta,
-  SocialsX,
-  SocialsFacebook,
-  SocialsGithub,
-  SocialsLinkedIn,
-  SocialsYoutube,
-  SocialsWhatsapp,
-  SocialsReddit,
-  SocialsDiscord,
-  SocialsTelegram,
-  FunctionsWorld,
-  FunctionsCurrency,
-  FunctionsTheme,
-  IntroGift,
-  IntroBinance,
-  IntroMotorola,
-  IntroCryptoCom,
-  IntroSafari,
-  IntroChrome,
-  IntroOpera,
-  IntroBrave,
-  ArrowRight,
-  CheckMark,
-  ArrowUp,
-  Shield,
-  Key,
-  Clock,
-  ShieldHeart,
-  CreditCard,
-  Repeat,
-  Cursor,
-  Frequency,
-  AddPayment,
-  Sort,
-  Details,
-  Trade
+  SocialsInstaIcon,
+  SocialsXIcon,
+  SocialsFacebookIcon,
+  SocialsGithubIcon,
+  SocialsLinkedInIcon,
+  SocialsYoutubeIcon,
+  SocialsWhatsappIcon,
+  SocialsRedditIcon,
+  SocialsDiscordIcon,
+  SocialsTelegramIcon,
+  FunctionsWorldIcon,
+  FunctionsCurrencyIcon,
+  FunctionsThemeIcon,
+  IntroGiftIcon,
+  IntroBinanceIcon,
+  IntroMotorolaIcon,
+  IntroCryptoComIcon,
+  IntroSafariIcon,
+  IntroChromeIcon,
+  IntroOperaIcon,
+  IntroBraveIcon,
+  ArrowRightIcon,
+  CheckMarkIcon,
+  ArrowUpIcon,
+  ShieldIcon,
+  KeyIcon,
+  ClockIcon,
+  ShieldHeartIcon,
+  CreditCardIcon,
+  RepeatIcon,
+  CursorIcon,
+  FrequencyIcon,
+  AddPaymentIcon,
+  SortIcon,
+  DetailsIcon,
+  TradeIcon,
+  NewsIcon,
+  HouseIcon,
+  ProfileIcon,
+  TrendingIcon,
 };

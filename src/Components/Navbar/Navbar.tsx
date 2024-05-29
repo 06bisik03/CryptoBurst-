@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
         <div className={styles.controlsContainer}>
           <a href="/buycrypto">Buy Crypto</a>
           <a href="/markets">Markets</a>
-          <a>News</a>
+          <a href="/news">News</a>
           <a>Exchange</a>
           <a>Search</a>
         </div>
