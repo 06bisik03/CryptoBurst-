@@ -1,14 +1,15 @@
 .newsContainer {
   width: 90%;
   justify-self: center;
-  height: 250vh;
+  min-height: 250vh;
   margin-top: 5vh;
   display: flex;
   margin-bottom: 15vh;
+
 }
 .newsChoices {
   width: 20%;
-  background-color: aqua;
+
   height: 87vh;
   display: flex;
   flex-direction: column;
@@ -30,7 +31,7 @@
   height: 10%;
   margin-bottom: 5%;
   align-self: center;
-  background-color: blue;
+
 }
 
 .newsMenu {
@@ -39,20 +40,42 @@
     display: grid;
     row-gap: 5%;
     margin-left: 5%;
-  background-color: rgb(233, 165, 116);
+
 }
-.newsMenu div {
+.inactiveNewsTabs {
     width:80%;
     height:100%;
     padding : 0 8%;
     border-radius: .8em;
-    background-color:chartreuse;
+    color:rgba(255, 255, 255, 0.539);
+    fill:rgba(255, 255, 255, 0.539);
     justify-self: center;
     align-items: center;
     gap:5%;
     display: flex;
+    transition: background-color .3s ease-in-out
 
 }
-.newsMenu div h4 {
+.inactiveNewsTabs:hover {
+    background-color: rgba(255, 255, 255, 0.159);
+    cursor: pointer;
+   
+}
+.activeNewsTab {
+    width:80%;
+    height:100%;
+    padding : 0 8%;
+    border-radius: .8em;
+    color:orange;
+    justify-self: center;
+    align-items: center;
+    gap:5%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.159);
+fill:orange;
+
+
+}
+.inactiveNewsTab h4 ,.activeNewsTab h4{
     font-size: 1.05em;
 }

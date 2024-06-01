@@ -1,3 +1,4 @@
+import { MutableRefObject } from "react";
 export interface Item {
     name: string;
 }
@@ -30,4 +31,13 @@ export interface CustomDropdownProps {
   options: string[];
   selected: string;
   onChange: (selected: string) => void;
+}
+export interface UseOverflowResult {
+  isExpanded: boolean;
+  overflowHeight: number;
+  toggleExpand: () => void;
+  contentRef: MutableRefObject<HTMLDivElement | null>;
+}
+export interface NewsTileProps {
+  img: string | null;
 }

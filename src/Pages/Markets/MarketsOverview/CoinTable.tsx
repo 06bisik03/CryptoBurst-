@@ -2,7 +2,7 @@ import React from "react";
 import usePagination from "../../../Hooks/UsePagination";
 import styles from "../../../Styles/Pages/Markets/MarketsOverview/MarketsOverview.module.css";
 
-import PaginationControls from "./PaginationControls"
+import PaginationControls from "../../../Components/General/PaginationControls"
 import { DetailsIcon,TradeIcon,SortIcon } from "../../../Components/Footer/SocialsContainer";
 import img1 from '../../../Assets/BTC.jpeg'
 import { Item,CoinTableProps } from "../../../types";

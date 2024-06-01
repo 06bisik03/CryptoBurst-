@@ -1,0 +1,166 @@
+.newsTileContainer {
+    width: 100%;
+    min-height: 47vh;
+    padding: 1em 3.5% 2em 3.5%;
+
+    display: grid;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    color:white;
+    transition: max-height 0.3s ease;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.261);
+}
+
+.newsTileContainer.expanded {
+    max-height: none; /* Allow height to grow based on content */
+}
+
+.newsAuthor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: flex-start;
+    
+}
+.newsAuthorCredentials {
+    width:50%;
+    display: flex;
+    align-items: center;
+    gap:.4em;
+    height:7vh;
+
+}
+.newsAuthorCredentials h5 {
+    font-size: .7em;
+    color:rgba(255, 255, 255, 0.357);
+}
+
+.btnFollow {
+    width:10%;
+    height:40%;
+    display: flex;
+
+    align-self: center;
+
+}
+
+.newsAuthor button {
+    width:100%;
+    border: none;
+    overflow: hidden;
+    height:100%;
+    border-radius: 2em;
+    overflow: hidden;
+    background-color: orange;
+    cursor: pointer;
+    
+}
+.newsAuthor button:hover {
+    background-color: rgb(207, 134, 0);
+
+}
+.authorImgContainer {
+    width:12.5%;
+    aspect-ratio: 1/1;
+border-radius: 50%;
+    background-color: blue;
+    overflow: hidden;
+}
+.authorImgContainer img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.newsContent {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+
+
+
+    text-align: justify;
+
+}
+
+.newsText {
+    height:100%;
+    width: 90%;
+    flex: 1;
+    padding: 0 1.875% 0 1.875%;
+    line-height: 1.6em;
+    font-size: .95em;
+    margin-left: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+
+}
+
+.newsBtn {
+    height: 3vh;
+    width: 91.875%;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+
+}
+
+.readMoreButton, .readLessButton {
+
+    background-color: transparent;
+    color: orange;
+    border: none;
+    cursor: pointer;
+
+}
+.readMoreButton,.readLessButton {
+    font-size:.7em;
+}
+.postStatistics {
+     width: 93.75%;
+     margin-left: auto;
+
+     height: 4vh;
+     display: flex;
+    justify-content: space-between;
+}
+.postStatistics div {
+    width:20%;
+    display: flex;
+    align-items: center;
+    fill:white;
+
+    height:100%;
+    gap: 5%;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.postStatistics div h4{
+    font-size: .9em;
+
+}
+.postStatistics div:hover {
+    fill:orange;
+    transform: scale(1.05);
+    color:orange;
+}
+.postImg {
+    width:93.75%;
+    margin-left: auto;
+
+    aspect-ratio: 2/1.25;
+    justify-self: center;
+
+}
+.postImg img {
+    width:100%;
+    max-height:100%;
+    object-fit: contain;
+}

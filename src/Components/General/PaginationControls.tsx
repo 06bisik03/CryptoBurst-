@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../../../Styles/Pages/Markets/MarketsOverview/MarketsOverview.module.css';
-import { PageButtonProps,PaginationControlsProps } from '../../../types';
+import styles from '../../Styles/Pages/Markets/MarketsOverview/MarketsOverview.module.css';
+import { PageButtonProps, PaginationControlsProps } from '../../types';
 
 const PaginationControls: React.FC<PaginationControlsProps> = ({
   currentPage,
@@ -8,7 +8,7 @@ const PaginationControls: React.FC<PaginationControlsProps> = ({
   handleClick,
   handlePrevClick,
   handleNextClick,
-  maxButtons,
+  maxButtons = 5,
 }) => {
   const buttonsBefore = Math.floor(maxButtons / 2);
   const buttonsAfter = Math.ceil(maxButtons / 2);
@@ -68,11 +68,8 @@ const PaginationControls: React.FC<PaginationControlsProps> = ({
   );
 };
 
-export default PaginationControls;
-
-
 const PageButton: React.FC<PageButtonProps> = ({ index, label, handleClick, currentPage }) => {
-  const _label = label ?? index;
+  const _label = label ?? index + 1;
 
   return (
     <button
@@ -84,3 +81,5 @@ const PageButton: React.FC<PageButtonProps> = ({ index, label, handleClick, curr
     </button>
   );
 };
+
+export default PaginationControls;
