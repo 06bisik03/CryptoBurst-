@@ -1,20 +1,25 @@
-import { useState, useEffect, MutableRefObject } from 'react';
+import { useState, useEffect, MutableRefObject } from "react";
 
 const usePagination = <T,>(
   items: T[],
   itemsPerPage: number,
-  containerRef?: MutableRefObject<HTMLElement | null>
+  containerRef?: MutableRefObject<HTMLElement | null> | null
 ) => {
   const [currentPage, setCurrentPage] = useState<number>(0);
   const totalPages = Math.ceil(items.length / itemsPerPage);
-  const currentItems = items.slice(currentPage * itemsPerPage, (1 + currentPage) * itemsPerPage);
+  const currentItems = items.slice(
+    currentPage * itemsPerPage,
+    (1 + currentPage) * itemsPerPage
+  );
 
   const scrollToTop = () => {
-    if (containerRef?.current) {
-      console.log('Scrolling to top');
-      containerRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    if (containerRef && containerRef.current) {
+      containerRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     } else {
-      console.log('No containerRef found');
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 

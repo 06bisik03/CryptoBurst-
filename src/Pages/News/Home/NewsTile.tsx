@@ -1,16 +1,16 @@
 import React from "react";
-import styles from "../../Styles/Pages/News/NewsTile.module.css";
-import UseOverflow from "../../Hooks/UseOverflow"; // Adjust the import path as necessary
-import img1 from "../../Assets/Bitcoin.png";
+import styles from "../../../Styles/Pages/News/NewsTile.module.css";
+import UseOverflow from "../../../Hooks/UseOverflow"; // Adjust the import path as necessary
+import img1 from "../../../Assets/Bitcoin.png";
 import {
   CommentIcon,
   LikeIcon,
   StatisticsIcon,
   ShareIcon,
-} from "../../Components/Footer/SocialsContainer";
+} from "../../../Components/Footer/SocialsContainer";
 
-import { NewsTileProps } from "../../types";
-import { SAMPLE_TEXT_NEWS } from "../../Constants";
+import { NewsTileProps } from "../../../types";
+import { SAMPLE_TEXT_NEWS } from "../../../Constants";
 const NewsTile: React.FC<NewsTileProps> = ({ img }) => {
   const { isExpanded, overflowHeight, toggleExpand, contentRef } =
     UseOverflow(20);

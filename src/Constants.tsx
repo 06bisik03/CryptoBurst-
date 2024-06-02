@@ -1,7 +1,7 @@
 
 import React from 'react';
 import img1 from './Assets/CoinBinance.webp';
-import NewsTile from './Pages/News/NewsTile';
+import NewsTile from './Pages/News/Home/NewsTile';
 export const SAMPLE_ITEMS = Array.from({ length: 80 }, (x, i) => ({ 
   name: `Coin ${i}`,
 }));

@@ -41,3 +41,7 @@ export interface UseOverflowResult {
 export interface NewsTileProps {
   img: string | null;
 }
+export interface StateProp {
+  state_passed: string,
+  state_update_function: Function;
+}

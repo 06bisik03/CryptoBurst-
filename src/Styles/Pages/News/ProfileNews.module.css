@@ -1,0 +1,162 @@
+.profileContainer {
+    width:50%;
+    min-height:92vh;
+
+border-radius: 1em;
+color:white;
+    display: grid;
+}
+.profileInfo {
+    width:100%;
+    height:20vh;
+
+    box-sizing: border-box;
+    grid-template-rows: 70% 30%;
+    display: grid;
+}
+.userImageAndInfo {
+    width:90%;  
+    justify-self: center;
+    height:90%;
+    margin-top: auto;
+
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.userImageContainer {
+    height:80%;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 50%;
+}
+.userImageContainer  img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.profileUsernamePhoto {
+    width:70%;
+    height:100%;
+    align-items: center;
+    gap: 3%;
+    display: flex;
+
+}
+.profileActions {
+    width:30%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    gap:10%;
+    align-items: center;
+    font-size: 1.4em;
+    fill: orange;
+    cursor: pointer;
+}
+.profileActions button {
+    width:60%;
+    height: 40%;
+    border-radius: 1em;
+    border: none;
+    color:white;
+    cursor: pointer;
+    font-size: .8em;
+    background-color: orange;
+}
+
+.profilePublicDetails {
+    width:50%;
+    height:100%;
+
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.publicDetail {
+    width:25%;
+    height:100%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+
+}
+.publicDetail h4 {
+    font-size: 1.1em;
+}
+.publicDetail h5 {
+    font-size: .7em;
+    color: rgba(255, 255, 255, 0.472);
+}
+.profilePostsContainer {
+    width:100%;
+
+    margin-top: 2.5vh;
+    min-height: 227.5vh;
+    display: grid;
+
+}
+.profilePostsDescription {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.236);
+}
+
+.profilePostsDescription h4 {
+    font-size: 1.2em;
+    align-self: center;
+    margin-left: 5%;
+    position: relative; /* Required for positioning the pseudo-element */
+    line-height: 5vh; /* Ensure h4 is vertically aligned within the container */
+}
+
+.profilePostsDescription h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;/* Adjust to position the underline correctly */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border-bottom: .2em solid orange; /* Adjust the underline color and thickness */
+}
+.profilePosts {
+    width:100%;
+    min-height: 220vh;
+    margin-top: 2.5vh;
+    display: grid;
+    
+
+}
+.noPostsImg {
+
+    height:45vh;
+    aspect-ratio: 1/1;
+    width:30%;
+    justify-self: center;
+    display: grid;
+
+    padding-top: 20vh;
+    box-sizing: border-box;
+    grid-template-rows: 80% 20%;
+}
+.noPostsImg img {
+    width:80%;
+height:100%;
+    padding: 0;
+    object-fit: contain;
+}
+.noPostsImg h4{
+    font-size: 1.25em;
+    justify-self: center;
+    align-items: flex-end;
+    display: flex;
+    color: rgba(255, 255, 255, 0.67);
+    font-weight: 300;
+    transform: translateX(12.5%);
+}
+

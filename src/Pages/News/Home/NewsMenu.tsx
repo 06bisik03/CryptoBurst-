@@ -1,53 +1,53 @@
 import React from "react";
 import { useState } from "react";
-import styles from "../../Styles/Pages/News/News.module.css";
+import styles from "../../../Styles/Pages/News/News.module.css";
 import {
   TrendingIcon,
   HouseIcon,
   ProfileIcon,
   NewsIcon,
-} from "../../Components/Footer/SocialsContainer";
+} from "../../../Components/Footer/SocialsContainer";
+import { StateProp } from "../../../types";
 
-const NewsMenu: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("Home");
+const NewsMenu: React.FC<StateProp>= ({state_passed: activeMenuTab, state_update_function: setActiveMenuTab }) => {
   return (
     <div className={styles.newsMenu}>
       <div
         className={
-          activeTab === "Home" ? styles.activeNewsTab : styles.inactiveNewsTabs
+          activeMenuTab === "Home" ? styles.activeNewsTab : styles.inactiveNewsTabs
         }
-        onClick={() => setActiveTab("Home")}
+        onClick={() => setActiveMenuTab("Home")}
       >
         <HouseIcon />
         <h4>Home</h4>
       </div>
       <div
         className={
-          activeTab === "News" ? styles.activeNewsTab : styles.inactiveNewsTabs
+          activeMenuTab === "News" ? styles.activeNewsTab : styles.inactiveNewsTabs
         }
-        onClick={() => setActiveTab("News")}
+        onClick={() => setActiveMenuTab("News")}
       >
         <NewsIcon />
         <h4>News</h4>
       </div>
       <div
         className={
-          activeTab === "Profile"
+          activeMenuTab === "Profile"
             ? styles.activeNewsTab
             : styles.inactiveNewsTabs
         }
-        onClick={() => setActiveTab("Profile")}
+        onClick={() => setActiveMenuTab("Profile")}
       >
         <ProfileIcon />
         <h4>Profile</h4>
       </div>
       <div
         className={
-          activeTab === "Trending"
+          activeMenuTab === "Trending"
             ? styles.activeNewsTab
             : styles.inactiveNewsTabs
         }
-        onClick={() => setActiveTab("Trending")}
+        onClick={() => setActiveMenuTab("Trending")}
       >
         <TrendingIcon />
         <h4>Trending Articles</h4>

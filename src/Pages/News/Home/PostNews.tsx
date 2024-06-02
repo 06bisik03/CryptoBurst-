@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../../Styles/Pages/News/PostNews.module.css";
-import img1 from '../../Assets/Bitcoin.png'
+import styles from "../../../Styles/Pages/News/PostNews.module.css";
+import img1 from '../../../Assets/Bitcoin.png'
 const PostNews: React.FC = () => {
   return (
     <div className={styles.postNewsContainer}>
