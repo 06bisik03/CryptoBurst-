@@ -1,10 +1,10 @@
 .newsSidebar {
   width: 25%;
   margin-left: 1.5%;
-  height: 200vh;
-display: flex;
-flex-direction: column;
-gap: 7.5vh;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5vh;
 }
 .trendingTopicsContainer {
   width: 90%;
@@ -18,11 +18,11 @@ gap: 7.5vh;
   border: 1px solid rgba(255, 255, 255, 0.156);
 }
 .trendingTopicsContainer img {
-    opacity: 0.3;
-    z-index: -100;
-    width:75%;
-    justify-self: flex-end;
-    position: absolute;
+  opacity: 0.3;
+  z-index: -100;
+  width: 75%;
+  justify-self: flex-end;
+  position: absolute;
 }
 .trendingTopicsContainer h4 {
   font-size: 1.25em;
@@ -39,13 +39,15 @@ gap: 7.5vh;
   display: flex;
 
   gap: 1%;
-transition: background-color .75s cubic-bezier(0.075, 0.82, 0.165, 1), color .75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),
+    color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
 }
 .topic:hover {
-    background-color: rgba(255, 255, 255, 0.124);
-    color:orange;
-    fill: orange;
+  background-color: rgba(255, 255, 255, 0.065);
+
+  color: orange;
+  fill: orange;
 }
 .topicDetails {
   flex: 1;
@@ -72,29 +74,265 @@ transition: background-color .75s cubic-bezier(0.075, 0.82, 0.165, 1), color .75
 .topicDetails div h4 {
   font-size: 0.8em;
   font-weight: 300;
-  color: green;
 }
 
 .voteMarketContainer {
-    width:90%;
-    height:27.5vh;
-    border-radius: 1.5em;
-    padding: 2.5vh 5% 2.5vh 5%;
-    background-color: aqua;
+  width: 90%;
+  height: 31.5vh;
+  border-radius: 1.5em;
+  padding: 2.5vh 5% 2.5vh 5%;
   border: 1px solid rgba(255, 255, 255, 0.156);
   display: grid;
-
+  color: white;
+}
+.voteMarketContainer h4 {
+  font-size: 1.2em;
+  height: 3vh;
 }
 .gauge {
-    height: 15vh;
+  width: 80%;
+  height: 17.5vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .questionaire {
-    width:100%;
-    height:7.5vh;
-    display: grid;
-    background-color: red;
+  width: 100%;
+  height: 8.5vh;
+  align-self: flex-end;
+  display: grid;
+  margin-top: 2.5vh;
 }
-.questionaire h4{
-    font-size: .9em;
-}   
+.questionaire h4 {
+  font-size: 0.8em;
+}
+.voteButtons {
+  width: 100%;
 
+  display: flex;
+  justify-content: space-between;
+}
+.voteButtons button {
+  width: 47%;
+  border: none;
+  color: white;
+  font-size: 1.05em;
+  border-radius: 0.7em;
+  cursor: pointer;
+  font-weight: 500;
+}
+.voteButtons button:nth-of-type(1) {
+  background-color: rgb(246, 70, 93);
+}
+.voteButtons button:nth-of-type(2) {
+  background-color: #0ecb81;
+}
+
+.mostSearchedContainer {
+  width: 90%;
+  height: 40vh;
+  border: 1px solid rgba(255, 255, 255, 0.156);
+
+  color: white;
+  padding: 2.5vh 5% 2.5vh 5%;
+  border-radius: 1.5em;
+  display: grid;
+}
+.mostSearchedHeader {
+  width: 100%;
+  height: 5vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+.mostSearchedCoins {
+  width: 100%;
+  height: 35vh;
+  display: grid;
+  row-gap: 2.5%;
+}
+.coinContainer {
+  width: 100%;
+  height: 80%;
+
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.coinContainer:hover {
+  background-color: rgba(255, 255, 255, 0.065);
+
+}
+.coinIdentifier {
+  width: 50%;
+  display: flex;
+  gap: 7.5%;
+}
+.coinFinance  h4{
+    font-size: .85em;
+}
+.coinImg {
+  width: 20%;
+  aspect-ratio: 1/1;
+  background-color: bisque;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.coinImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coinFinance {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  display: grid;
+}
+.coinFinance h4 {
+  justify-self: flex-end;
+}
+.latestNewsContainer {
+  width: 90%;
+  height: 50vh;
+  border: 1px solid rgba(255, 255, 255, 0.156);
+
+  padding: 2.5vh 5% 2.5vh 5%;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  border-radius: 1.5em;
+}
+.latestNewsContainer h4 {
+  font-size: 1.25em;
+  height: 7.5vh;
+}
+.latestNews {
+  height: 40vh;
+  width: 100%;
+
+  display: grid;
+  row-gap: 10%;
+}
+.pieceOfNews {
+  width: 100%; /* Adjust as necessary */
+  height: 100%;
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+cursor: pointer;
+}
+.pieceOfNews:hover {
+  background-color: rgba(255, 255, 255, 0.065);
+
+}
+
+.pieceOfNews h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em; /* Adjust as necessary */
+  position: relative;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+
+}
+
+.pieceOfNews h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em; /* Adjust as necessary */
+  color: gray; /* Adjust as necessary */
+}
+
+.mustFollowContainer {
+  width:90%;
+  height:42.5vh;
+  padding: 2.5vh 5% 2.5vh 5%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5em;
+  color:white;
+  border: 1px solid rgba(255, 255, 255, 0.156);
+  
+}
+.mustFollowContainer h4 {
+  height:7.5vh;
+
+}
+.creatorsList {
+  margin-top: 2.5%;
+  height:35vh;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  gap:2.5%;
+
+}
+.creatorContainer {
+  width:100%;
+
+  height: 17.5%;
+  cursor: pointer;
+  display: flex;
+
+}
+.creatorBio{
+  margin-left: 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+  height:100%;
+  width:50%;
+  justify-content: center;
+  align-items: flex-start;
+  
+  font-size: .9em;
+}
+.creatorBio h4 {
+  font-size: 1em;
+  height:50%;
+}
+.creatorBio h4:hover {
+  text-decoration: underline;
+}
+.creatorBio h5 {
+  height:50%;
+  font-size: .9em;
+  color:rgba(255, 255, 255, 0.276);
+}
+.creatorContainer button {
+  cursor: pointer;
+  width:22.5%;
+  margin-left: 5%;
+  border-radius: .3em;
+  align-self: center;
+  font-size: .9em;
+  font-weight: 600;
+  background-color: rgb(255, 199, 96);
+  border: none;
+  height:50%;
+  justify-self: flex-end;
+}
+.creatorContainer button:hover {
+  background-color: rgb(255, 176, 30);
+}
+.creatorImg{
+height:80%;
+  display: flex;
+  aspect-ratio: 1/1;
+
+border-radius: 50%;
+overflow: hidden;
+}
+.creatorImg img {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+
+}

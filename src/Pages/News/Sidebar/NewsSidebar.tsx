@@ -4,7 +4,7 @@ import TrendingTopics from "./TrendingTopics";
 import VoteMarket from "./VoteMarket";
 import MostSearched from "./MostSearched";
 import LatestNews from "./LatestNews";
-import TrendingArticles from "./TrendingArticles";
+
 import MustFollow from "./MustFollow";
 
 const NewsSidebar : React.FC = () => {
@@ -15,7 +15,7 @@ const NewsSidebar : React.FC = () => {
             <MostSearched />
             <LatestNews />
             <MustFollow />
-            <TrendingArticles />
+
         </div>
     )
 }
