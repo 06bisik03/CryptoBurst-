@@ -45,3 +45,6 @@ export interface StateProp {
   state_passed: string,
   state_update_function: Function;
 }
+export interface GaugeProps {
+  value: number;
+}
