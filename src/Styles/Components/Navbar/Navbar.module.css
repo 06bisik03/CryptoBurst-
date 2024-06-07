@@ -67,9 +67,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: color .75s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-.navbarRedirectContainer form{
+.logContainer:hover {
+    color:orange;
+}
+.searchContainer form{
     position: relative;
     top: 30%;
     left: 50%;
@@ -84,7 +88,7 @@
     padding: 5px;
 }
 
-.navbarRedirectContainer input{
+.searchContainer input{
     top: 0;
     left: 0;
     width: 100%;
@@ -98,7 +102,7 @@
 
 }
 
-.navbarRedirectContainer .fa{
+.searchContainer .fa{
     box-sizing: border-box;
     padding: 10px;
     width: 2em;
@@ -113,28 +117,28 @@
     font-size: 1.2em;
     transition: all 1s;
 }
-.navbarRedirectContainer link {
+.searchContainer link {
     transform: translate(50%,50%);
 }
-.navbarRedirectContainer form:hover,
-.navbarRedirectContainer form:valid{
+.searchContainer form:hover,
+.searchContainer form:valid{
     width: 400px;
     cursor: pointer;
 }
 
-.navbarRedirectContainer form:hover input,
-.navbarRedirectContainer form:valid input{
+.searchContainer form:hover input,
+.searchContainer form:valid input{
     display: block;
 }
 
-.navbarRedirectContainer form:hover .fa,
-.navbarRedirectContainer form:valid .fa{
+.searchContainer form:hover .fa,
+.searchContainer form:valid .fa{
     background: #07051a;
     color: white;
 }
 
 
-.navbarRedirectContainer a {
+.searchContainer a {
   display: none;
   position: absolute;
   bottom:0;
@@ -146,6 +150,6 @@
   width: 100%;
 }
 
-.navbarRedirectContainer form:valid a {
+.searchContainer form:valid a {
   display: block;
 }
