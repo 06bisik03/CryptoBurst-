@@ -4,7 +4,8 @@
 
 border-radius: 1em;
 color:white;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 .profileInfo {
     width:100%;
@@ -93,8 +94,8 @@ color:white;
 }
 .profilePostsContainer {
     width:100%;
-
     margin-top: 2.5vh;
+
     min-height: 227.5vh;
     display: grid;
 
@@ -102,8 +103,8 @@ color:white;
 .profilePostsDescription {
     height: 5vh;
     width: 100%;
+    
     display: flex;
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.236);
 }
 

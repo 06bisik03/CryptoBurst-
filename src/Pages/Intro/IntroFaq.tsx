@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import styles from '../../Styles/Pages/Intro/IntroFaq.css';
+import '../../Styles/Pages/Intro/IntroFaq.css';
 
 const IntroFaq: React.FC = () => {
   const [selection, setSelection] = useState<number | null>(null);
@@ -117,7 +117,7 @@ const IntroFaq: React.FC = () => {
           htmlFor="faq-drawer-3"
           onClick={selection === 3 ? handleDeselect : () => handleSelect(3)}
         >
-          How to buy Bitcoin and other cryptocurrencies on [YourCryptoSite]?
+          How to buy Bitcoin and other cryptocurrencies on CryptoBurst?
         </label>
         <div
           className="faq-drawer__content-wrapper"
@@ -179,7 +179,7 @@ const IntroFaq: React.FC = () => {
           htmlFor="faq-drawer-5"
           onClick={selection === 5 ? handleDeselect : () => handleSelect(5)}
         >
-          How to trade cryptocurrencies on [YourCryptoSite]?
+          How to trade cryptocurrencies on CryptoBurst?
         </label>
         <div
           className="faq-drawer__content-wrapper"
